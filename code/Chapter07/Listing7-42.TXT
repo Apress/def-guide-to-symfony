@@ -1,0 +1,9 @@
+Listing 7-42 - Partials Used by the `'sidebar'`Slot Components, in `modules/bar/templates/`
+
+
+// _default.php
+<p>This zone contains contextual information.</p>
+
+// _user.php
+<p>User name: <?php echo $current_user->getName() ?></p>
+<p><?php echo $nb_articles ?> articles published</p>

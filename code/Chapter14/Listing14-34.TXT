@@ -1,0 +1,6 @@
+Listing 14-34 - Removing All Actions in the `list` View
+
+
+list:
+  title:          List of Articles
+  actions:        {}

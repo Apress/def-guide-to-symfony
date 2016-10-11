@@ -1,0 +1,11 @@
+Listing 10-10 - Object Form Helpers Syntax
+
+
+<?php echo object_input_tag($object, $method, $options) ?>
+<?php echo object_input_date_tag($object, $method, $options) ?>
+<?php echo object_input_hidden_tag($object, $method, $options) ?>
+<?php echo object_textarea_tag($object, $method, $options) ?>
+<?php echo object_checkbox_tag($object, $method, $options) ?>
+<?php echo object_select_tag($object, $method, $options) ?>
+<?php echo object_select_country_tag($object, $method, $options) ?>
+<?php echo object_select_language_tag($object, $method, $options) ?>

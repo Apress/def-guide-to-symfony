@@ -1,0 +1,29 @@
+Listing 10-21 - A Single Action to Display and Handle the Form, in `modules/contact/actions/actions.class.php`
+
+
+class ContactActions extends sfActions
+{
+  public function executeSend()
+  {
+    if ($this->getRequest()->getMethod() != sfRequest::POST)
+    {
+      // Prepare data for the template
+
+      // Display the form
+      return sfView::SUCCESS;
+    }
+    else
+    {
+      // Handle the form submission
+      ...
+      $this->redirect('mymodule/anotheraction');
+    }
+  }
+  public function handleErrorSend()
+  {
+    // Prepare data for the template
+
+    // Display the form
+    return sfView::SUCCESS;
+  }
+}

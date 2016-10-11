@@ -1,0 +1,16 @@
+Listing 6-13 - Use of the `forward404If()` Method
+
+
+// This action is equivalent to the one shown in Listing 6-12
+public function executeShow()
+{
+  $article = ArticlePeer::retrieveByPK($this->getRequestParameter('id'));
+  $this->forward404If(!$article);
+}
+
+// So is this one
+public function executeShow()
+{
+  $article = ArticlePeer::retrieveByPK($this->getRequestParameter('id'));
+  $this->forward404Unless($article);
+}

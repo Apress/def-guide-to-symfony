@@ -1,0 +1,10 @@
+Listing 17-4 - Giving a Class the Ability to Get New Methods
+
+
+class SomeClass
+{
+  public function __call($method, $arguments)
+  {
+    return sfMixer::callMixins();
+  }
+}

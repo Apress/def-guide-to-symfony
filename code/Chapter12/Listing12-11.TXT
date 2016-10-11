@@ -1,0 +1,14 @@
+Listing 12-11 - Clearing Template Fragments from the Cache
+
+
+<!-- Cached code -->
+<?php if (!cache('users')): ?>
+  ... // Whatever
+  <?php cache_save() ?>
+<?php endif; ?>
+
+// Is identified in the cache as
+/sf_cache_partial/user/list/sf_cache_key/users
+
+// Clear it with
+$cacheManager->remove('@sf_cache_partial?module=user&action=list&sf_cache_key=users');

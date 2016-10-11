@@ -1,0 +1,7 @@
+Listing 17-20 - Activating a Plug-In Module, in `myapp/config/settings.yml`
+
+
+all:
+  .settings:
+    enabled_modules:  [default, sfMyPluginModule]
+

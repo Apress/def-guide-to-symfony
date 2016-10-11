@@ -1,0 +1,9 @@
+Listing 5-17 - Extract of `settings.yml`
+
+
+all:
+  .settings:
+    available:              on
+    path_info_array:        SERVER
+    path_info_key:          PATH_INFO
+    url_format:             PATH

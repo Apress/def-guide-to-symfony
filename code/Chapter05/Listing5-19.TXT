@@ -1,0 +1,12 @@
+Listing 5-19 - Sample `app.yml` to Define Credit Card Operators Accepted for a Given Site
+
+
+all:
+  creditcards:
+    fake:             off
+    visa:             on
+    americanexpress:  on
+
+dev:
+  creditcards:
+    fake:             on

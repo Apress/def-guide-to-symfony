@@ -1,0 +1,6 @@
+Listing 15-16 - Testing Cookies with `sfTestBrowser`
+
+
+$b->test()->is($request->getCookie('foo'), 'bar');     // Incoming cookie
+$cookies = $response->getCookies();
+$b->test()->is($cookies['foo'], 'foo=bar');            // Outgoing cookie

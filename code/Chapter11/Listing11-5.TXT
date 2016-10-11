@@ -1,0 +1,14 @@
+Listing 11-5 - Options of the `update_element_function()` Helper
+
+
+// Insert content just after the 'indicator' element
+update_element_function('indicator', array(
+  'position' => 'after',
+  'content'  => "<strong>Data processing complete</strong>",
+));
+
+// Remove the element before the 'indicator', and only if $condition is true
+update_element_function('indicator', array(
+  'action'   => $condition ? 'remove' : 'empty',
+  'position' => 'before',
+))

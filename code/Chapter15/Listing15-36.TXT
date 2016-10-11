@@ -1,0 +1,20 @@
+Listing 15-36 - A Sample Selenium Test, in `web/selenium/test/testIndex.html`
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+  <title>Index tests</title>
+</head>
+<body>
+<table cellspacing="0">
+<tbody>
+  <tr><td colspan="3">First step</td></tr>
+  <tr><td>open</td>              <td>/myapp_test.php/</td> <td>&nbsp;</td></tr>
+  <tr><td>clickAndWait</td>      <td>link=click me</td>    <td>&nbsp;</td></tr>
+  <tr><td>assertTextPresent</td> <td>Hello, World!</td>    <td>&nbsp;</td></tr>
+</tbody>
+</table>
+</body>
+</html>

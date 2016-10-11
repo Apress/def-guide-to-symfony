@@ -1,0 +1,13 @@
+Listing 5-16 - Accessing Configuration Settings in PHP in the `dev` Environment
+
+
+echo sfConfig::get('app_version');
+ => '1.5'
+echo sfConfig::get('app_tax');   // Remember that category headers are ignored
+ => '19.6'
+echo sfConfig::get('app_default_user_name);
+ => 'John Doe'
+echo sfConfig::get('app_mail_webmaster');
+ => 'dummy@example.com'
+echo sfConfig::get('app_mail_contact');
+ => 'dummy@example.com'

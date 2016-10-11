@@ -1,0 +1,9 @@
+Listing 14-22 - Using a `stacked` Layout in the `list` View, in `modules/comment/config/generator.yml`
+
+
+list:
+  layout:  stacked
+  params:  |
+    %%=content%% <br />
+    (sent by %%author%% on %%created_at%% about %%article_link%%)
+  display:  [created_at, author, content]

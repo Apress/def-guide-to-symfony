@@ -1,0 +1,8 @@
+Listing 11-14 - Passing Your Own Parameters to the Remote Action with the `with` Option
+
+
+<?php echo observe_field('item', array(
+    'update'   => 'item_suggestion',
+    'url'      => '@item_being_typed',
+    'with'     => "'param=' + value",
+)) ?>

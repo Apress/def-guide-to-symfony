@@ -1,0 +1,10 @@
+Listing 9-26 - Using `sfController` to Transform an Internal URI
+
+
+$uri = 'article/read?id=21';
+
+$url = $this->getController()->genUrl($uri);
+ => /article/21
+
+$url = $this->getController()->genUrl($uri);
+=> http://myapp.example.com/article/21

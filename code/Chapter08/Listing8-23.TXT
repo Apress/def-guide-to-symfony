@@ -1,0 +1,12 @@
+Listing 8-23 - Overriding Existing Model Methods, in `lib/model/Article.php`
+
+
+public function getComments($criteria = null, $con = null )
+{
+  // Objects are passed by reference in PHP5, so to avoid modifying the original,
+  // you must clone it
+  $criteria = clone $criteria;
+  $criteria->addDescendingOrderByColumn(ArticlePeer::CREATED_AT);
+
+  return parent::getComments($criteria, $con);
+}

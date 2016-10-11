@@ -1,0 +1,6 @@
+Listing 7-25 - File Inclusion in the Action
+
+
+$this->getResponse()->addStylesheet('mystyle1');
+$this->getResponse()->addStylesheet('mystyle2');
+$this->getResponse()->addJavascript('myscript');

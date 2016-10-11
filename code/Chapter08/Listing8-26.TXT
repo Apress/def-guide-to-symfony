@@ -1,0 +1,7 @@
+Listing 8-26 - Basic Column Attributes
+
+
+propel:
+  blog_article:
+    id:                 # Let symfony do the work
+    title: varchar(50)  # Specify the type yourself

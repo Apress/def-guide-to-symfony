@@ -1,0 +1,26 @@
+Listing 15-13 - Simulating Form Input with the `sfTe stBrowser` Object
+
+
+// Example template in modules/foobar/templates/editSuccess.php
+<?php echo form_tag('foobar/update') ?>
+  <?php echo input_hidden_tag('id', $sf_params->get('id')) ?>
+  <?php echo input_tag('name', 'foo') ?>
+  <?php echo submit_tag('go') ?>
+  <?php echo textarea('text1', 'foo') ?>
+  <?php echo textarea('text2', 'bar') ?>
+</form>
+
+// Example functional test for this form
+$b = new sfTestBrowser();
+$b->initialize();
+$b->get('/foobar/edit/id/1');
+
+// Option 1: POST request
+$b->post('/foobar/update', array('id' => 1, 'name' => 'dummy', 'commit' => 'go'));
+
+// Option 2: Click the submit button with parameters
+$b->click('go', array('name' => 'dummy'));
+
+// Option 3: Enter the form values field by field name then click the submit button
+$b->setField('name', 'dummy')->
+    click('go');

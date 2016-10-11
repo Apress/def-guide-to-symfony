@@ -1,0 +1,6 @@
+Listing 14-21 - Moving the Hyperlink for the `edit` View in the `list` View, in `modules/comment/config/generator.yml`
+
+
+list:
+  display:    [article_link, =content]
+

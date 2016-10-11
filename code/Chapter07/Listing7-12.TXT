@@ -1,0 +1,14 @@
+Listing 7-12 - The Partial, in `modules/news/templates/_headlines.php`
+
+
+<div>
+  <h1>Latest news</h1>
+  <ul>
+  <?php foreach($news as $headline): ?>
+    <li>
+      <?php echo $headline->getPublishedAt() ?>
+      <?php echo link_to($headline->getTitle(),'news/show?id='.$headline->getId()) ?>
+    </li>
+  <?php endforeach ?>
+  </ul>
+</div>

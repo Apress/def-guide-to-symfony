@@ -1,0 +1,30 @@
+Listing 19-3 - Default File Structure Variables, from `$sf_symfony_data_dir/config/constants.php`
+
+
+sf_root_dir           # myproject/
+                      #   apps/
+sf_app_dir            #     myapp/
+sf_app_config_dir     #       config/
+sf_app_i18n_dir       #       i18n/
+sf_app_lib_dir        #       lib/
+sf_app_module_dir     #       modules/
+sf_app_template_dir   #       templates/
+sf_bin_dir            #   batch/
+                      #   cache/
+sf_base_cache_dir     #     myapp/
+sf_cache_dir          #       prod/
+sf_template_cache_dir #         templates/
+sf_i18n_cache_dir     #         i18n/
+sf_config_cache_dir   #         config/
+sf_test_cache_dir     #         test/
+sf_module_cache_dir   #         modules/
+sf_config_dir         #   config/
+sf_data_dir           #   data/
+sf_doc_dir            #   doc/
+sf_lib_dir            #   lib/
+sf_model_lib_dir      #     model/
+sf_log_dir            #   log/
+sf_test_dir           #   test/
+sf_plugins_dir        #   plugins/
+sf_web_dir            #   web/
+sf_upload_dir         #     uploads/

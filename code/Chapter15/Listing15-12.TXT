@@ -1,0 +1,9 @@
+Listing 15-12 - Simulating Navigation with the `sfTestBrowser` Object
+
+
+$b->get('/');                  // Request to the home page
+$b->get('/foobar/show/id/1');
+$b->back();                    // Back to one page in history
+$b->forward();                 // Forward one page in history
+$b->reload();                  // Reload current page
+$b->click('go');               // Look for a 'go' link or button and click it

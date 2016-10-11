@@ -1,0 +1,9 @@
+Listing 13-18 - XLIFF Dictionary for a `format_number_choice()` Argument
+
+
+...
+<trans-unit id="3">
+  <source>[0]Nobody is logged|[1]There is 1 person logged|(1,+Inf]There are%1% persons logged</source>
+  <target>[0]Personne n'est connecté|[1]Une personne est connectée|(1,+Inf]Ily a %1% personnes en ligne</target>
+</trans-unit>
+...

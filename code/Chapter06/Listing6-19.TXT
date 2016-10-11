@@ -1,0 +1,6 @@
+Listing 6-19 - Templates Also Have Access to the User Session Attributes
+
+
+<p>
+  Hello, <?php echo $sf_user->getAttribute('nickname') ?>
+</p>

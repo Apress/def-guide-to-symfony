@@ -1,0 +1,26 @@
+Listing 2-6 - The Database Abstraction Part of the Model
+
+
+<?php
+
+function open_connection($host, $user, $password)
+{
+  return mysql_connect($host, $user, $password);
+}
+
+function close_connection($link)
+{
+  mysql_close($link);
+}
+
+function query_database($query, $database, $link)
+{
+  mysql_select_db($database, $link);
+
+  return mysql_query($query, $link);
+}
+
+function fetch_results($result)
+{
+  return mysql_fetch_array($result, MYSQL_ASSOC);
+}

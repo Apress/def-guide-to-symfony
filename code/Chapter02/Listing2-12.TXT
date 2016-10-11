@@ -1,0 +1,13 @@
+Listing 2-12 - list Template, in myproject/apps/myapp/modules/weblog/templates/ listSuccess.php
+
+
+<h1>List of Posts</h1>
+<table>
+<tr><th>Date</th><th>Title</th></tr>
+<?php foreach ($posts as $post): ?>
+  <tr>
+    <td><?php echo $post->getDate() ?></td>
+    <td><?php echo $post->getTitle() ?></td>
+  </tr>
+<?php endforeach; ?>
+</table>

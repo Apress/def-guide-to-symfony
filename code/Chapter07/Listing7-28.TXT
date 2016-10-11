@@ -1,0 +1,8 @@
+Listing 7-28 - Sample Module `view.yml`
+
+
+indexSuccess:
+  stylesheets: [special]
+
+all:
+  stylesheets: [additional]

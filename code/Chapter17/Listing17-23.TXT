@@ -1,0 +1,39 @@
+Listing 17-23 - File Structure of a Plug-In
+
+
+pluginName/
+  config/
+    *schema.yml        // Data schema
+    *schema.xml
+    config.php         // Specific plug-in configuration
+  data/
+    generator/
+      sfPropelAdmin
+        */             // Administration generator themes
+          templates/
+          skeleton/
+    fixtures/
+      *.yml            // Fixtures files
+    tasks/
+      *.php            // Pake tasks
+  lib/
+    *.php              // Classes
+    helper/
+      *.php            // Helpers
+    model/
+      *.php            // Model classes
+  modules/
+    */                 // Modules
+      actions/
+        actions.class.php
+      config/
+        module.yml
+        view.yml
+        security.yml
+      templates/
+        *.php
+      validate/
+        *.yml
+  web/
+    *                  // Assets
+

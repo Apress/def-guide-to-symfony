@@ -1,0 +1,12 @@
+Listing 19-4 - Default Module File Structure Variables
+
+
+sf_app_module_dir                 # modules/
+module_name                       #  mymodule/
+sf_app_module_action_dir_name     #    actions/
+sf_app_module_template_dir_name   #    templates/
+sf_app_module_lib_dir_name        #    lib/
+sf_app_module_view_dir_name       #    views/
+sf_app_module_validate_dir_name   #    validate/
+sf_app_module_config_dir_name     #    config/
+sf_app_module_i18n_dir_name       #    i18n/

@@ -1,0 +1,8 @@
+Listing 15-24 - Example of Complex CSS Selectors Accepted by `checkResponseElement()`
+
+
+$b->checkResponseElement('ul#list li a[href]', 'click me');
+$b->checkResponseElement('ul > li', 'click me');
+$b->checkResponseElement('ul + li', 'click me');
+$b->checkResponseElement('h1, h2', 'click me');
+$b->checkResponseElement('a[class$="foo"][href*="bar.html"]', 'my link');

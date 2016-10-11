@@ -1,0 +1,6 @@
+Listing 7-20 - Meta Definition As Response Settings in the Action
+
+
+$this->getResponse()->addHttpMeta('cache-control', 'public');
+$this->getResponse()->addMeta('description', 'Finance in France');
+$this->getResponse()->addMeta('keywords', 'finance, France');

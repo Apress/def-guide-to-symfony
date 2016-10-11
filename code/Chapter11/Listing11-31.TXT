@@ -1,0 +1,12 @@
+Listing 11-31 - Using the Autocomplete Tag Helper in a Template
+
+
+<?php echo form_tag('mymodule/myaction') ?>
+  Find an author by name:
+  <?php echo input_auto_complete_tag('author', 'default name',
+    'author/autocomplete',
+    array('autocomplete' => 'off'),
+    array('use_style'    => true)
+  ) ?>
+  <?php echo submit_tag('Find') ?>
+</form>

@@ -1,0 +1,8 @@
+Listing 10-5 - Incorrect Date Formats in Date Helpers
+
+
+// Date zero = 01/01/1970
+<?php echo input_date_tag('test', 0, 'rich=true') ?>
+
+// Non-English date formats don't work
+<?php echo input_date_tag('test', '01/04/2006', 'rich=true') ?>

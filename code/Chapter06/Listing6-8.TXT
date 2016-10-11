@@ -1,0 +1,27 @@
+Listing 6-8 - `sfActions` Common Methods
+
+
+class mymoduleActions extends sfActions
+{
+  public function executeIndex()
+  {
+    // Retrieving request parameters
+    $password    = $this->getRequestParameter('password');
+
+    // Retrieving controller information
+    $moduleName  = $this->getModuleName();
+    $actionName  = $this->getActionName();
+
+    // Retrieving framework core objects
+    $request     = $this->getRequest();
+    $userSession = $this->getUser();
+    $response    = $this->getResponse();
+    $controller  = $this->getController();
+    $context     = $this->getContext();
+
+    // Setting action variables to pass information to the template
+    $this->setVar('foo', 'bar');
+    $this->foo = 'bar';            // Shorter version
+
+  }
+}

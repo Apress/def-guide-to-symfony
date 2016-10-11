@@ -1,0 +1,17 @@
+Listing 10-29 - Defining When to Test a Field, in `validate/send.yml`
+
+
+methods:         [post]     # This is the default setting
+
+fields:
+  name:
+    required:
+      msg:       The name field cannot be left blank
+    myStringValidator:
+  email:
+    methods:     [post, get] # Overrides the global methods settings
+    required:
+      msg:       The email field cannot be left blank
+    myStringValidator:
+    sfEmailValidator:
+      email_error:  This email address is invalid

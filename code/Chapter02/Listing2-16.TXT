@@ -1,0 +1,6 @@
+Listing 2-16 - Using the `sfResponse` Parameter Holder Proxy Methods
+
+
+$response->setParameter('foo', 'bar');
+echo $response->getParameter('foo');
+ => 'bar'	

@@ -1,0 +1,7 @@
+Listing 7-2 - Sample Helper Definition
+
+
+function input_tag($name, $value = null)
+{
+  return '<input type="text" name="'.$name.'" id="'.$name.'"value="'.$value.'" />';
+}

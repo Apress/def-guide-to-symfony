@@ -1,0 +1,8 @@
+Listing 18-16 - Caching the Result of a Function
+
+
+$function_cache_dir = sfConfig::get('sf_cache_dir').'/function';
+$fc = new sfFunctionCache($function_cache_dir);
+$result1 = $fc->call('cos', M_PI);
+$result2 = $fc->call('preg_replace', '/\s\s+/', ' ', $input);
+

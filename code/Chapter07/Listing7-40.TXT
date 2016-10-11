@@ -1,0 +1,6 @@
+Listing 7-40 - Specializing the 'sidebar' Slot Component, in myapp/modules/user/config/view.yml
+
+
+all:
+  components:
+    sidebar:  [bar, user]

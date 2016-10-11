@@ -1,0 +1,7 @@
+Listing 7-9 - The Template Passes the Variable to the Partial, in mymodule/templates/indexSucc`ess.php`
+
+
+<p>Hello, world!</p>
+<?php include_partial('mypartial', 
+array('mytotal' => $total)
+) ?>

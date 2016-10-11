@@ -1,0 +1,10 @@
+Listing 7-15 - Overriding the `'sidebar'` Slot Content in a Template
+
+
+...
+<?php slot('sidebar') ?>
+  <!-- custom sidebar code for the current template-->
+  <h1>User details</h1>
+  <p>name:  <?php echo $user->getName() ?></p>
+  <p>email: <?php echo $user->getEmail() ?></p>
+<?php end_slot() ?>

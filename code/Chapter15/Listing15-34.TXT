@@ -1,0 +1,24 @@
+Listing 15-34 - Populating a Database from a Test File
+
+
+$data = new sfPropelData();
+
+// Loading data from file
+$data->loadData(sfConfig::get('sf_data_dir').'/fixtures/test_data.yml'); 
+
+// Loading data from array
+$fixtures = array(
+  'Article' => array(
+    'article_1' => array(
+      'title'      => 'foo title',
+      'body'       => 'bar body',
+      'created_at' => time(),
+    ),
+    'article_2'    => array(
+      'title'      => 'foo foo title',
+      'body'       => 'bar bar body',
+      'created_at' => time(),
+    ),
+  ),
+);
+$data->loadDataFromArray($fixtures);

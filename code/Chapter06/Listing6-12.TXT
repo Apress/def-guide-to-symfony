@@ -1,0 +1,11 @@
+Listing 6-12 - Use of the `forward404()` Method
+
+
+public function executeShow()
+{
+  $article = ArticlePeer::retrieveByPK($this->getRequestParameter('id'));
+  if (!$article)
+  {
+    $this->forward404();
+  }
+}

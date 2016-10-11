@@ -1,0 +1,39 @@
+Listing 17-8 - Registering Extensions
+
+
+class Steroids
+{
+  protected $brand = 'foobar';
+
+  public function partyAllNight($bicycleRider)
+  {
+    echo $bicycleRider->getName()." spends the night dancing.\n";
+    echo "Thanks ".$brand."!\n";
+  }
+
+  public function breakRecord($bicycleRider, $distance)
+  {
+    echo "Nobody ever made ".$distance." meters that fast before!\n";
+  }
+
+  static function pass()
+  {
+    echo " and passes half the peloton.\n";
+  }
+}
+
+sfMixer::register('BicycleRider', array('Steroids', 'partyAllNight'));
+sfMixer::register('BicycleRider:sprint', array('Steroids', 'breakRecord'));
+sfMixer::register('BicycleRider:climb:slope', array('Steroids', 'pass'));
+sfMixer::register('BicycleRider:climb:top', array('Steroids', 'pass'));
+
+$superRider = new BicycleRider();
+$superRider->climb();
+=> John climbs and passes half the peloton
+=> John gets to the top and passes half the peloton
+$superRider->sprint(2000);
+=> John sprints 2000 meters
+=> Nobody ever made 2000 meters that fast before!
+$superRider->partyAllNight();
+=> John spends the night dancing.
+=> Thanks foobar!

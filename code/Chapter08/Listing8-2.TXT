@@ -1,0 +1,13 @@
+Listing 8-2 - Accessors Mask the Data Logic
+
+
+public function getTotal()
+{
+  $total = 0;
+  foreach ($this->getItems() as $item)
+  {
+    $total += $item->getPrice() * $item->getQuantity();
+  }
+
+  return $total;
+}

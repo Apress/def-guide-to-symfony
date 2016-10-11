@@ -1,0 +1,12 @@
+Listing 18-8 - Using a Custom Method to Prepare a Temporary Array
+
+
+// In the action
+$this->articles = ArticlePeer::getArticleTitlesWithNbComments();
+
+// In the template
+<ul>
+<?php foreach ($articles as $article): ?>
+  <li><?php echo $article[0] ?> (<?php echo $article[1] ?> comments)</li>
+<?php endforeach; ?>
+</ul>

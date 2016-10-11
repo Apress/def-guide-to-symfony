@@ -1,0 +1,5 @@
+Listing 7-34 - Layout Definition in `view.yml`
+
+
+indexSuccess:
+  layout: my_layout

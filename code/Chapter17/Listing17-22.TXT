@@ -1,0 +1,6 @@
+Listing 17-22 - Uninstalling a Plug-In
+
+
+> cd myproject
+> php symfony plugin-uninstall pear.symfony-project.com/sfPrototypePlugin
+> php symfony cc

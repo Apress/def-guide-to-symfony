@@ -1,0 +1,5 @@
+Listing 14-14 - Partials Can Be Used As Additional Columns--Use the `_` Prefix
+
+
+    list:
+      display:        [id, _article_link, created_at]

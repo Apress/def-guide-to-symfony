@@ -1,0 +1,25 @@
+Listing 2-7 - The Data Access Part of the Model
+
+
+function getAllPosts()
+{
+  // Connecting to database
+  $link = open_connection('localhost', 'myuser', 'mypassword');
+
+  // Performing SQL query
+  $result = query_database('SELECT date, title FROM post', 'blog_db', $link);
+  
+  // Filling up the array 
+  $posts = array();
+  while ($row = fetch_results($result)) 
+  {
+     $posts[] = $row;
+  }
+  
+  // Closing connection
+  close_connection($link);
+  
+  return $posts;
+}
+
+?>

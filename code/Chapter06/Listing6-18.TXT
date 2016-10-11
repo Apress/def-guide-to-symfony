@@ -1,0 +1,15 @@
+Listing 6-18 - Removing Data from the User Session
+
+
+class mymoduleActions extends sfActions
+{
+  public function executeRemoveNickname()
+  {
+    $this->getUser()->getAttributeHolder()->remove('nickname');
+  }
+
+  public function executeCleanup()
+  {
+    $this->getUser()->getAttributeHolder()->clear();
+  }
+}

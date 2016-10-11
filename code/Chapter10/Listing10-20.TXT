@@ -1,0 +1,20 @@
+Listing 10-20 - Displaying the Form Again, in `modules/contact/actions/actions.class.php`
+
+
+class ContactActions extends sfActions
+{
+  public function executeIndex()
+  {
+    // Display the form
+  }
+
+  public function handleErrorSend()
+  {
+    $this->forward('contact', 'index');
+  }
+
+  public function executeSend()
+  {
+    // Handle the form submission
+  }
+}

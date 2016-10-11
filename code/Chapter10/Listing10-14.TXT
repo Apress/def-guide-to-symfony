@@ -1,0 +1,21 @@
+Listing 10-14 - Options of the `object_select_tag()` Helper
+
+
+// Base syntax
+<?php echo object_select_tag($article, 'getAuthorId') ?>
+// Builds the list from AuthorPeer::doSelect(new Criteria())
+
+// Change the peer class used to retrieve the possible values
+<?php echo object_select_tag($article, 'getAuthorId', 'related_class=Foobar') ?>
+// Builds the list from FoobarPeer::doSelect(new Criteria())
+
+// Change the peer method used to retrieve the possible values
+<?php echo object_select_tag($article, 'getAuthorId','peer_method=getMostFamousAuthors') ?>
+// Builds the list from AuthorPeer::getMostFamousAuthors(new Criteria())
+
+// Add an <option value="">&nbsp;</option> at the top of the list
+<?php echo object_select_tag($article, 'getAuthorId', 'include_blank=true') ?>
+
+// Add an <option value="">Choose an author</option> at the top of the list
+<?php echo object_select_tag($article, 'getAuthorId',
+  'include_custom=Choose an author') ?>

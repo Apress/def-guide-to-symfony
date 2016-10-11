@@ -1,0 +1,26 @@
+Listing 17-26 - Customizing a Plug-In Action
+
+
+// In myPlugin/modules/mymodule/lib/myPluginmymoduleActions.class.php
+class myPluginmymoduleActions extends sfActions
+{
+  public function executeIndex()
+  {
+    // Some code there
+  }
+}
+
+// In myPlugin/modules/mymodule/actions/actions.class.php
+class mymoduleActions extends myPluginmymoduleActions
+{
+  // Nothing
+}
+
+// In myapp/modules/mymodule/actions/actions.class.php
+class mymoduleActions extends myPluginmymoduleActions
+{
+  public function executeIndex()
+  {
+    // Override the plug-in code there
+  }
+}

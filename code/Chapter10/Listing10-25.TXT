@@ -1,0 +1,15 @@
+Listing 10-25 - Setting Default Values to Repopulate the Form When Validation Fails, in `templates/indexSuccess.php`
+
+
+<?php use_helper('Validation') ?>
+<?php echo form_tag('contact/send') ?>
+           <?php echo form_error('name') ?><br />
+  Name:    <?php echo input_tag('name', $sf_params->get('name')) ?><br />
+           <?php echo form_error('email') ?><br />
+  Email:   <?php echo input_tag('email', $sf_params->get('email')) ?><br />
+           <?php echo form_error('age') ?><br />
+  Age:     <?php echo input_tag('age', $sf_params->get('age')) ?><br />
+           <?php echo form_error('message') ?><br />
+  Message: <?php echo textarea_tag('message', $sf_params->get('message')) ?><br />
+  <?php echo submit_tag() ?>
+</form>

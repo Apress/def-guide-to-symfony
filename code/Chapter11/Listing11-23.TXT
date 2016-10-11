@@ -1,0 +1,11 @@
+Listing 11-23 - Visual Effects in JavaScript with Script.aculo.us
+
+
+// Highlights the element 'my_field'
+Effect.Highlight('my_field', { startcolor:'#ff99ff', endcolor:'#999999' })
+
+// Blinds down an element
+Effect.BlindDown('id_of_element');
+
+// Fades away an element
+Effect.Fade('id_of_element', { transition: Effect.Transitions.wobble })

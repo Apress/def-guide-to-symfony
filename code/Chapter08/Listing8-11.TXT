@@ -1,0 +1,7 @@
+Listing 8-11 - Delete Records from the Database with the `delete()`Method on the Related Object
+
+
+foreach ($article->getComments() as $comment)
+{
+  $comment->delete();
+}

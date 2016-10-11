@@ -1,0 +1,19 @@
+Listing 14-37 - Using Credentials in `generator.yml`
+
+
+## The id column is displayed only for users with the admin credential
+    list:
+      title:          List of Articles
+      layout:         tabular
+      display:        [id, =title, content, nb_comments]
+      fields:
+        id:           { credentials: [admin] }
+
+## The addcomment interaction is restricted to the users with the admin credential
+    list:
+      title:          List of Articles
+      object_actions:
+        _edit:        -
+        _delete:      -
+        addcomment:   { credentials: [admin], name: Add a comment,
+                        action: addComment, icon: backend/addcomment.png }

@@ -1,0 +1,17 @@
+Listing 6-30 - Filter Class Struture
+
+
+class myFilter extends sfFilter
+{
+  public function execute ($filterChain)
+  {
+    // Code to execute before the action execution
+    ...
+
+    // Execute next filter in the chain
+    $filterChain->execute();
+
+    // Code to execute after the action execution, before the rendering
+    ...
+  }
+}

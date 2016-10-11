@@ -1,0 +1,11 @@
+Listing 11-22 - Using Ajax Callbacks to Show and Hide an Activity Indicator
+
+
+<div id="feedback"></div>
+<div id="indicator">Loading...</div>
+<?php echo link_to_remote('Delete this post', array(
+    'update'   => 'feedback',
+    'url'      => 'post/delete?id='.$post->getId(),
+    'loading'  => "Element.show('indicator')",
+    'complete' => "Element.hide('indicator')",
+)) ?>

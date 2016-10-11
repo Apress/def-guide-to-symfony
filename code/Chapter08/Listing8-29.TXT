@@ -1,0 +1,10 @@
+Listing 8-29 - Foreign Key Alternative Syntax Applied to Multiple Reference Foreign Key
+
+
+_foreignKeys:
+  my_foreign_key:
+    foreignTable:  db_user
+    onDelete:      cascade
+    references:
+      - { local: user_id, foreign: id }
+      - { local: post_id, foreign: id }

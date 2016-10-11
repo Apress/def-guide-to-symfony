@@ -1,0 +1,5 @@
+Listing 7-31 - Style Sheet Inclusion with Media in `view.yml`
+
+
+indexSuccess:
+  stylesheets: [main, paper: { media: print }]

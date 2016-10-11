@@ -1,0 +1,19 @@
+Listing 14-29 - Handling a Partial Field in the Action, in modules/user/actions/actions.class.php
+
+
+class userActions extends sfActions
+{
+  protected function updateUserFromRequest()
+  {
+    // Handle the input of the partial field
+    $password = $this->getRequestParameter('newpassword');
+
+    if ($password)
+    {
+      $this->user->setPassword($password);
+    }
+
+    // Let symfony handle the other fields
+    parent::updateUserFromRequest();
+  }
+}

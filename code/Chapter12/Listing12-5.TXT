@@ -1,0 +1,13 @@
+Listing 12-5 - Using the `cache()` Helper, in `myapp/modules/user/templates/listSuccess.php`
+
+
+<!-- Code executed each time -->
+<?php echo link_to('last accessed user', 'user/show?id='.$last_accessed_user_id) ?>
+
+<!-- Cached code -->
+<?php if (!cache('users')): ?>
+  <?php foreach ($users as $user): ?>
+    <?php echo $user->getName() ?>
+  <?php endforeach; ?>
+  <?php cache_save() ?>
+<?php endif; ?>

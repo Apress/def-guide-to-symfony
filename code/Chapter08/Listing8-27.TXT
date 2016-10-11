@@ -1,0 +1,8 @@
+Listing 8-27 - Complex Column Attributes
+
+
+propel:
+  blog_article:
+    id:       { type: integer, required: true,primaryKey: true, autoIncrement: true }
+    name:     { type: varchar(50), default: foobar, index: true }
+    group_id: { type: integer, foreignTable: db_group,foreignReference: id, onDelete: cascade }

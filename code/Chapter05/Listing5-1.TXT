@@ -1,0 +1,12 @@
+Listing 5-1 - YAML Files Forbid Tabs
+
+
+# Never use tabs
+all:
+-> mail:
+-> -> webmaster:  webmaster@example.com
+
+# Use blanks instead
+all:
+  mail:
+    webmaster: webmaster@example.com

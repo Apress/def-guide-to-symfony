@@ -1,0 +1,10 @@
+Listing 16-1 - Setting the Error Reporting Level, in `myapp/config/settings.yml`
+
+
+prod:
+ .settings:
+    error_reporting:  257
+
+dev:
+  .settings:
+    error_reporting:  4095

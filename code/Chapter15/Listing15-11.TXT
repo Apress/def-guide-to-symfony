@@ -1,0 +1,20 @@
+Listing 15-11 - Simulating Requests with the `sfTestBrowser` Object
+
+
+include(dirname(__FILE__).'/../../bootstrap/functional.php');
+
+// Create a new test browser
+$b = new sfTestBrowser();
+$b->initialize();
+
+$b->get('/foobar/show/id/1');                   // GET request
+$b->post('/foobar/show', array('id' => 1));     // POST request
+
+// The get() and post() methods are shortcuts to the call() method
+$b->call('/foobar/show/id/1', 'get');
+$b->call('/foobar/show', 'post', array('id' => 1));
+
+// The call() method can simulate requests with any method
+$b->call('/foobar/show/id/1', 'head');
+$b->call('/foobar/add/id/1', 'put');
+$b->call('/foobar/delete/id/1', 'delete');

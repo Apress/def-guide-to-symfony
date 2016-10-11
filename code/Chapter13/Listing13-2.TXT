@@ -1,0 +1,9 @@
+Listing 13-2 - Setting and Retrieving the Culture in an Action
+
+
+// Culture setter
+$this->getUser()->setCulture('en_US');
+
+// Culture getter
+$culture = $this->getUser()->getCulture();
+ => en_US

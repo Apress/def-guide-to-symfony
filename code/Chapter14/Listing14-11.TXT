@@ -1,0 +1,11 @@
+Listing 14-11 - Custom Getters Provide Additional Columns for Administration Modules, in `backend/modules/article/config/generator.yml`
+
+
+generator:
+  class:              sfPropelAdminGenerator
+  param:
+    model_class:      Article
+    theme:            default
+
+    list:
+      display:        [id, title, nb_comments, created_at]

@@ -1,0 +1,10 @@
+Listing 6-27 - Dealing with User Credentials in a Template
+
+
+<ul>
+  <li><?php echo link_to('section1', 'content/section1') ?></li>
+  <li><?php echo link_to('section2', 'content/section2') ?></li>
+  <?php if ($sf_user->hasCredential('section3')): ?>
+  <li><?php echo link_to('section3', 'content/section3') ?></li>
+  <?php endif; ?>
+</ul>

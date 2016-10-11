@@ -1,0 +1,10 @@
+Listing 10-17 - Sample Contact Form, in `modules/contact/templates/indexSuccess.php`
+
+
+<?php echo form_tag('contact/send') ?>
+  Name:    <?php echo input_tag('name') ?><br />
+  Email:   <?php echo input_tag('email') ?><br />
+  Age:     <?php echo input_tag('age') ?><br />
+  Message: <?php echo textarea_tag('message') ?><br />
+  <?php echo submit_tag() ?>
+</form>

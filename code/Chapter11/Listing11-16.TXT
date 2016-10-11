@@ -1,0 +1,10 @@
+Listing 11-16 - Handling a Conditional Update
+
+
+<div id="error"></div>
+<div id="feedback"></div>
+<p>Hello, World!</p>
+<?php echo link_to_remote('Delete this post', array(
+    'update'   => array('success' => 'feedback', 'failure' => 'error')
+    'url'      => 'post/delete?id='.$post->getId(),
+)) ?>

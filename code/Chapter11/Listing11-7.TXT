@@ -1,0 +1,11 @@
+Listing 11-7 - Using the `$()` Function to Get an Element by ID in JavaScript
+
+
+node = $('elementID');
+
+// Means the same as
+node = document.getElementById('elementID');
+
+// It can also retrieve more than one element at a time
+// And in this case the result is an array of DOM elements
+nodes = $('firstDiv', 'secondDiv');

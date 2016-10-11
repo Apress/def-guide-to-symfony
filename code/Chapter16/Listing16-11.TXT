@@ -1,0 +1,10 @@
+Listing 16-11 - Inserting a Message in the Debug Toolbar
+
+
+// From an action
+$this->debugMessage($message);
+
+// From a template
+<?php use_helper('Debug') ?>
+<?php debug_message($message) ?>
+

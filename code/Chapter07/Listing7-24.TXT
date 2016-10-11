@@ -1,0 +1,6 @@
+Listing 7-24 - File Inclusion in `view.yml`
+
+
+indexSuccess:
+  stylesheets: [mystyle1, mystyle2]
+  javascripts: [myscript]

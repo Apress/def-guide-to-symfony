@@ -1,0 +1,10 @@
+Listing 10-32 - Using a Custom Validator, in `validate/send.yml`
+
+
+fields:
+  message:
+    required:
+      msg:          The message field cannot be left blank
+    sfSpamValidator:
+      max_url:      3
+      spam_error:   Leave this site immediately, you filthy spammer!

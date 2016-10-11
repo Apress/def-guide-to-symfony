@@ -1,0 +1,13 @@
+Listing 4-6 - Setting an Action Attribute in the Action to Make It Available to the Template
+
+
+<?php
+
+class mymoduleActions extends sfActions
+{
+  public function executeMyAction()
+  {
+    $today = getdate();
+    $this->hour = $today['hours'];
+  }
+}

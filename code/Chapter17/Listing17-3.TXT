@@ -1,0 +1,14 @@
+Listing 17-3 - Multiple Inheritance Is Possible via `sfMixer`
+
+
+class Novel extends Story
+{
+  public function __call($method, $arguments)
+  {
+    return sfMixer::callMixins();
+  }
+}
+
+sfMixer::register('Novel', array('Book', 'getISBN'));
+$myNovel = new Novel();
+$myNovel->getISBN();

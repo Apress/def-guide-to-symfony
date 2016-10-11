@@ -1,0 +1,16 @@
+Listing 9-14 - Getting Absolute URLs Instead of Relative URLs
+
+
+<?php echo url_for('article/read?title=Finance_in_France') ?>
+ => '/routed/url/to/Finance_in_France'
+<?php echo url_for('article/read?title=Finance_in_France', true) ?>
+ => 'http://www.example.com/routed/url/to/Finance_in_France'
+
+<?php echo link_to('finance', 'article/read?title=Finance_in_France') ?>
+ => <a href="/routed/url/to/Finance_in_France">finance</a>
+<?php echo link_to('finance', 'article/read?title=Finance_in_France','absolute=true') ?>
+ => <a href=" http://www.example.com/routed/url/to/Finance_in_France">finance</a>
+
+// The same goes for the asset helpers
+<?php echo image_tag('test', 'absolute=true') ?>
+<?php echo javascript_include_tag('myscript', 'absolute=true') ?>

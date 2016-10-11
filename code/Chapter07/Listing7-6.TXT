@@ -1,0 +1,26 @@
+Listing 7-6 - The Layout, the View Configuration, and the Template Assembled
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/2000/REC-xhtml1-20000126/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="title" content="symfony project" />
+  <meta name="robots" content="index, follow" />
+  <meta name="description" content="symfony project" />
+  <meta name="keywords" content="symfony, project" />
+  <title>symfony project</title>
+  <link rel="stylesheet" type="text/css" href="/css/main.css" />
+  <link rel="shortcut icon" href="/favicon.ico">
+</head>
+<body>
+
+<h1>Welcome</h1>
+<p>Welcome back, <?php echo $name ?>!</p>
+<ul>What would you like to do?
+  <li><?php echo link_to('Read the last articles', 'article/read') ?></li>
+  <li><?php echo link_to('Start writing a new one', 'article/write') ?></li>
+</ul>
+
+</body>
+</html>

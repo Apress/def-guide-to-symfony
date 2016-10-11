@@ -1,0 +1,19 @@
+Listing 6-17 - The `sfUser` Object Can Hold Custom User Attributes Existing Across Requests
+
+
+class mymoduleActions extends sfActions
+{
+  public function executeFirstPage()
+  {
+    $nickname = $this->getRequestParameter('nickname');
+
+    // Store data in the user session
+    $this->getUser()->setAttribute('nickname', $nickname);
+  }
+
+  public function executeSecondPage()
+  {
+    // Retrieve data from the user session with a default value
+    $nickname = $this->getUser()->getAttribute('nickname', 'Anonymous Coward');
+  }
+}

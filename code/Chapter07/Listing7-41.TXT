@@ -1,0 +1,18 @@
+Listing 7-41 - Components Used by the 'sidebar'Slot, in modules/bar/actions/components.class.php
+
+
+class barComponents extends sfComponents
+{
+  public function executeDefault()
+  {
+  }
+
+  public function executeUser()
+  {
+    $current_user = $this->getUser()->getCurrentUser();
+    $c = new Criteria();
+    $c->add(ArticlePeer::AUTHOR_ID, $current_user->getId());
+    $this->nb_articles = ArticlePeer::doCount($c);
+    $this->current_user = $current_user;
+  }
+}

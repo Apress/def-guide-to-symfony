@@ -1,0 +1,7 @@
+Listing 4-7 - The Template Has Direct Access to the Action Attributes
+
+
+<p>Hello, world!</p>
+<?php if ($hour >= 18): ?>
+<p>Or should I say good evening? It's already <?php echo $hour ?>.</p>
+<?php endif; ?>

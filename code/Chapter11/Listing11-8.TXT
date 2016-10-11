@@ -1,0 +1,10 @@
+Listing 11-8 - Using the `remote_function()` Helper
+
+
+<div id="myzone"></div>
+<?php echo javascript_tag(
+  remote_function(array(
+    'update'  => 'myzone',
+    'url'     => 'mymodule/myaction',
+  ))
+) ?>

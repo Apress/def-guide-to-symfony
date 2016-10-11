@@ -1,0 +1,12 @@
+Listing 15-29 - Example Unit Test Naming Practice
+
+
+// srttolower()
+$t->diag('strtolower()');
+$t->isa_ok(strtolower('Foo'), 'string', 'strtolower() returns a string');
+$t->is(strtolower('FOO'), 'foo', 'strtolower() transforms the input to lowercase');
+
+
+# strtolower()
+ok 1 - strtolower() returns a string
+ok 2 - strtolower() transforms the input to lowercase

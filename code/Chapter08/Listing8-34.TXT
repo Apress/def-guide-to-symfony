@@ -1,0 +1,22 @@
+Listing 8-34 - Sample `schema.xml`, Corresponding to Listing 8-3
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+ <database name="propel" defaultIdMethod="native" noXsd="true" package="lib.model">
+    <table name="blog_article" phpName="Article">
+      <column name="id" type="integer" required="true" primaryKey="true"autoIncrement="true" />
+      <column name="title" type="varchar" size="255" />
+      <column name="content" type="longvarchar" />
+      <column name="created_at" type="timestamp" />
+    </table>
+    <table name="blog_comment" phpName="Comment">
+      <column name="id" type="integer" required="true" primaryKey="true"autoIncrement="true" />
+      <column name="article_id" type="integer" />
+      <foreign-key foreignTable="blog_article">
+        <reference local="article_id" foreign="id"/>
+      </foreign-key>
+      <column name="author" type="varchar" size="255" />
+      <column name="content" type="longvarchar" />
+      <column name="created_at" type="timestamp" />
+    </table>
+ </database>

@@ -1,0 +1,12 @@
+Listing 10-19 - Validation File, in `modules/contact/validate/send.yml`
+
+
+fields:
+  name:
+    required:
+      msg:       The name field cannot be left blank
+    sfStringValidator:
+      min:       2
+      min_error: This name is too short (2 characters minimum)
+      max:       100
+      max_error: This name is too long. (100 characters maximum)

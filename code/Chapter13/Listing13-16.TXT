@@ -1,0 +1,18 @@
+Listing 13-16 - Translating Sentences That Contain Code
+
+
+// Base example
+Welcome to all the <b>new</b> users.<br />
+There are <?php echo count_logged() ?> persons logged.
+
+// Bad way to enable text translation
+<?php echo __('Welcome to all the') ?>
+<b><?php echo __('new') ?></b>
+<?php echo __('users') ?>.<br />
+<?php echo __('There are') ?>
+<?php echo count_logged() ?>
+<?php echo __('persons logged') ?>
+
+// Good way to enable text translation
+<?php echo __('Welcome to all the <b>new</b> users') ?> <br />
+<?php echo __('There are %1% persons logged', array('%1%' => count_logged())) ?>

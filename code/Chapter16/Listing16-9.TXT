@@ -1,0 +1,6 @@
+Listing 16-9 - Web Debug Toolbar Activation, in `myapp/config/settings.yml`
+
+
+dev:
+  .settings:
+    web_debug:              on

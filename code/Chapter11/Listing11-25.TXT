@@ -1,0 +1,12 @@
+Listing 11-25 - Visual Effects in Ajax Callbacks
+
+
+<div id="feedback"></div>
+<div id="indicator" style="display: none">Loading...</div>
+<?php echo link_to_remote('Delete this post', array(
+    'update'   => 'feedback',
+    'url'      => 'post/delete?id='.$post->getId(),
+    'loading'  => visual_effect('appear', 'indicator'),
+    'complete' => visual_effect('fade', 'indicator').
+                  visual_effect('highlight', 'feedback'),
+)) ?>

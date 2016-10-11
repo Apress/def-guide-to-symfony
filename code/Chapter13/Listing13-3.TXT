@@ -1,0 +1,12 @@
+Listing 13-3 - Displaying a Number for the User's Culture
+
+
+<?php use_helper('Number') ?>
+
+<?php $sf_user->setCulture('en_US') ?>
+<?php echo format_number(12000.10) ?>
+ => '12,000.10'
+
+<?php $sf_user->setCulture('fr_FR') ?>
+<?php echo format_number(12000.10) ?>
+ => '12 000,10'

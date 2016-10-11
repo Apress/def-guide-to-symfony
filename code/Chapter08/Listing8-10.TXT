@@ -1,0 +1,12 @@
+Listing 8-10 - Foreign Keys Are Translated into Special Getters
+
+
+// Many to one relationship
+echo $comment->getArticle()->getTitle();
+ => My first article
+echo $comment->getArticle()->getContent();
+ => This is my very first article.
+    Hope you enjoy it!
+
+// One to many relationship
+$comments = $article->getComments();

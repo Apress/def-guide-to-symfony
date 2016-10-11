@@ -1,0 +1,12 @@
+Listing 14-36 - Validator File Syntax for Administration-Generated Forms
+
+
+## Replace square brackets by curly brackets in the fields list
+fields:
+  article{title}:
+    required:
+      msg: You must provide a title
+    ## For validator parameters, use the original field name between quotes
+    sfCompareValidator:
+      check:        "user[newpassword]"
+      compare_error: The password confirmation does not match the password.

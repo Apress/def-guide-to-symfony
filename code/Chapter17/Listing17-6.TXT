@@ -1,0 +1,15 @@
+Listing 17-6 - A Method Can Contain More Than One Hook, In Which Case They Must Be Named
+
+
+class AgainAnotherClass
+{
+  public function doMoreThings()
+  {
+    echo "I'm ready.";
+    sfMixer::callMixins('beginning');
+    echo "I'm working...";
+    sfMixer::callMixins('end');
+    echo "I'm done.";
+  }
+}
+

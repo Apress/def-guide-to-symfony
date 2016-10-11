@@ -1,0 +1,18 @@
+Listing 14-35 - Syntax of the Generated Input Names
+
+
+// generator.yml
+generator:
+  class:              sfPropelAdminGenerator
+  param:
+    model_class:      Article
+    theme:            default
+    edit:
+      display: [title]
+
+// Resulting _edit_form.php template
+<?php echo object_input_tag($article, 'getTitle', array('control_name' =>
+     'article[title]')) ?>
+
+// Resulting HTML
+<input type="text" name="article[title]" id="article[title]" value="My Title" />

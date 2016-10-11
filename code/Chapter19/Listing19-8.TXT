@@ -1,0 +1,7 @@
+Listing 19-8 - Example of Initialization of the `myMapAPI` Class
+
+
+$mapApi = new myMapAPI();
+$mapApi->setUrl($url);
+$mapApi->setUser($user);
+

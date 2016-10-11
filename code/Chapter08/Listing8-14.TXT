@@ -1,0 +1,18 @@
+Listing 8-14 - Another Example of Retrieving Records by Criteria with `doSelect()`--Criteria with Conditions
+
+
+$c = new Criteria();
+$c->add(CommentPeer::AUTHOR, 'Steve');
+$c->addJoin(CommentPeer::ARTICLE_ID, ArticlePeer::ID);
+$c->add(ArticlePeer::CONTENT, '%enjoy%', Criteria::LIKE);
+$c->addAscendingOrderByColumn(CommentPeer::CREATED_AT);
+$comments = CommentPeer::doSelect($c);
+
+// Will result in the following SQL query
+SELECT blog_comment.ID, blog_comment.ARTICLE_ID, blog_comment.AUTHOR,
+       blog_comment.CONTENT, blog_comment.CREATED_AT
+FROM   blog_comment, blog_article
+WHERE  blog_comment.AUTHOR = 'Steve'
+       AND blog_article.CONTENT LIKE '%enjoy%'
+       AND blog_comment.ARTICLE_ID = blog_article.ID
+ORDER BY blog_comment.CREATED_AT ASC

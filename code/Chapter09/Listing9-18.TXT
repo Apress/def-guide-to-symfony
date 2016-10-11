@@ -1,0 +1,7 @@
+Listing 9-18 - Adding a Requirement to a Routing Rule
+
+
+article_by_id:
+  url:   /article/:id
+  param: { module: article, action: read }
+  requirements: { id: \d+ }

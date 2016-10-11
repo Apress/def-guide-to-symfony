@@ -1,0 +1,41 @@
+Listing 13-4 - Culture-Dependent Helpers
+
+
+<?php use_helper('Date') ?>
+
+<?php echo format_date(time()) ?>
+ => '9/14/06'
+
+<?php echo format_datetime(time()) ?>
+ => 'September 14, 2006 6:11:07 PM CEST'
+
+<?php use_helper('Number') ?>
+
+<?php echo format_number(12000.10) ?>
+ => '12,000.10'
+
+<?php echo format_currency(1350, 'USD') ?>
+ => '$1,350.00'
+
+<?php use_helper('I18N') ?>
+
+<?php echo format_country('US') ?>
+ => 'United States'
+
+<?php format_language('en') ?>
+ => 'English'
+
+<?php use_helper('Form') ?>
+
+<?php echo input_date_tag('birth_date', mktime(0, 0, 0, 9, 14, 2006)) ?>
+ => input type="text" name="birth_date" id="birth_date" value="9/14/06" size="11" />
+
+<?php echo select_country_tag('country', 'US') ?>
+ => <select name="country" id="country"><option value="AF">Afghanistan</option>
+      ...
+      <option value="GB">United Kingdom</option>
+      <option value="US" selected="selected">United States</option>
+      <option value="UM">United States Minor Outlying Islands</option>
+      <option value="UY">Uruguay</option>
+      ...
+    </select>

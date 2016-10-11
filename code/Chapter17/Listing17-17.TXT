@@ -1,0 +1,6 @@
+Listing 17-17 - Installing a Plug-In from a PEAR Channel
+
+
+> cd myproject
+> php symfony plugin-install channelName/pluginName
+> php symfony cc

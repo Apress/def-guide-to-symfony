@@ -1,0 +1,8 @@
+Listing 15-22 - Using the Position Option to Match an Element at a Certain Position
+
+
+$b = new sfTestBrowser();
+$b->initialize();
+$b->get('/foobar/edit?id=1')->
+    checkResponseElement('form textarea', 'foo')->
+    checkResponseElement('form textarea', 'bar', array('position' => 1));    

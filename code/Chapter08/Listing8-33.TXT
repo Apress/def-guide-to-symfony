@@ -1,0 +1,13 @@
+Listing 8-33 - Explicit i18n Mechanism
+
+
+propel:
+  db_group:
+    _attributes: { isI18N: true, i18nTable: db_group_i18n }
+    id:
+    created_at:
+
+  db_group_i18n:
+    id:       { type: integer, required: true, primaryKey: true,foreignTable: db_group, foreignReference: id, onDelete: cascade }
+    culture:  { isCulture: true, type: varchar(7), required: true,primaryKey: true }
+    name:     varchar(50)

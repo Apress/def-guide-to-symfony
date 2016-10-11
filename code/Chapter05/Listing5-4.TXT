@@ -1,0 +1,11 @@
+Listing 5-4 - YAML Array Syntax
+
+
+# Shorthand syntax for arrays
+players: [ Mark McGwire, Sammy Sosa, Ken Griffey ]
+
+# Expanded syntax for arrays
+players:
+  - Mark McGwire
+  - Sammy Sosa
+  - Ken Griffey

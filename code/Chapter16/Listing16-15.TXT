@@ -1,0 +1,9 @@
+Listing 16-15 - Sample rsync Exclusion Settings, in `myproject/config/rsync_exclude.txt`
+
+
+.svn
+/cache/*
+/log/*
+/stats/*
+/web/uploads/*
+/web/myapp_dev.php

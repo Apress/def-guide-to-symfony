@@ -1,0 +1,22 @@
+Listing 14-27 - Setting a Custom Input Type and Params for the `edit` View
+
+
+generator:
+  class:              sfPropelAdminGenerator
+  param:
+    model_class:      Comment
+    theme:            default
+
+    edit:
+      fields:
+                      ## Drop the input, just display plain text
+        id:           { type: plain }
+                      ## The input is not editable
+        author:       { params: disabled=true }
+                      ## The input is a textarea (object_textarea_tag)
+        content:      { type: textarea_tag,
+                        params: rich=true css=user.css tinymce_options=width:330 }
+                      ## The input is a select (object_select_tag)
+        article_id:   { params: include_custom=Choose an article }
+         ...
+

@@ -1,0 +1,17 @@
+Listing 11-33 - Sortable List Example
+
+
+<p>What do you like most?</p>
+<ul id="order">
+  <li id="item_1" class="sortable">Carrots</li>
+  <li id="item_2" class="sortable">Apples</li>
+  <li id="item_3" class="sortable">Oranges</li>
+  // Nobody likes Brussel sprouts anyway
+  <li id="item_4">Brussel sprouts</li>
+</ul>
+<div id="feedback"></div>
+<?php echo sortable_element('order', array(
+  'url'    => 'item/sort',
+  'update' => 'feedback',
+  'only'   => 'sortable';
+)) ?>

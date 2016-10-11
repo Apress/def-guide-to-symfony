@@ -1,0 +1,10 @@
+Listing 7-46 - Methods of Escaped Objects Accept an Additional Parameter
+
+
+<?php echo $test_object->testSpecialChars('&') ?>
+=> &lt;&amp;&gt;
+// The three following lines return the same value
+<?php echo $test_object->testSpecialChars('&', ESC_RAW) ?>
+<?php echo $sf_data->getRaw('test_object')->testSpecialChars('&') ?>
+<?php echo $sf_data->get('test_object', ESC_RAW)->testSpecialChars('&') ?>
+ => <&>

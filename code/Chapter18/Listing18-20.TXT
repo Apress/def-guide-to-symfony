@@ -1,0 +1,7 @@
+Listing 18-20 - Turning Features Off, in `myapp/config/settings.yml`
+
+
+all:
+  .settings:
+    use_database:      off    # Database and model features
+    escaping_strategy: off    # Output escaping feature

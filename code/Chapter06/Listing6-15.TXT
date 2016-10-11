@@ -1,0 +1,13 @@
+Listing 6-15 - Accessing the `sfRequest` Object Methods from an Action
+
+
+class mymoduleActions extends sfActions
+{
+  public function executeIndex()
+  {
+    $hasFoo = $this->getRequest()->hasParameter('foo');
+    $hasFoo = $this->hasRequestParameter('foo');  // Shorter version
+    $foo     = $this->getRequest()->getParameter('foo');
+    $foo     = $this->getRequestParameter('foo');  // Shorter version
+  }
+}

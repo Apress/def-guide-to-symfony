@@ -1,0 +1,6 @@
+Listing 17-15 - Installing a Plug-In from the Symfony Wiki
+
+
+> cd myproject
+> php symfony plugin-install http://plugins.symfony-project.com/pluginName
+> php symfony cc

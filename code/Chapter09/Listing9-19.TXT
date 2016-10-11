@@ -1,0 +1,8 @@
+Listing 9-19 - Setting a Default Value for a Wildcard
+
+
+article_by_id:
+  url:          /article/:id
+  param:        { module: article, action: read, 
+id: 1
+ }

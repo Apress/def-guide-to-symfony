@@ -1,0 +1,17 @@
+Listing 18-5 - Example of Available `doSelect` Methods for an `ArticlePeer` Class
+
+
+// Retrieve Article objects
+doSelect()
+
+// Retrieve Article objects and hydrate related Author objects
+doSelectJoinAuthor()
+
+// Retrieve Article objects and hydrate related Category objects
+doSelectJoinCategory()
+
+// Retrieve Article objects and hydrate related Author and Category objects
+doSelectJoinAuthorAndCategory()
+
+// Synonym of
+doSelectJoinAll()

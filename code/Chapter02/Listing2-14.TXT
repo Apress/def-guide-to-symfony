@@ -1,0 +1,11 @@
+Listing 2-14 - Layout, in `myproject/apps/myapp/templates/layout.php
+
+
+<html>
+  <head>
+    <?php echo include_title() ?>
+  </head>
+  <body>
+    <?php echo $sf_data->getRaw('sf_content') ?>
+  </body>
+</html>

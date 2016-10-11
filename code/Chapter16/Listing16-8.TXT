@@ -1,0 +1,10 @@
+Listing 16-8 - Sample Xdebug Configuration
+
+
+;xdebug.profiler_enable=1
+;xdebug.profiler_output_dir="/tmp/xdebug"
+xdebug.auto_trace=1             ; enable tracing
+xdebug.trace_format=0
+;xdebug.show_mem_delta=0        ; memory difference
+;xdebug.show_local_vars=1
+;xdebug.max_nesting_level=100

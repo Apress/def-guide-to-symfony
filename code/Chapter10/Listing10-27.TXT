@@ -1,0 +1,10 @@
+Listing 10-27 - Converting Input Before `fillin`, in `validate/send.yml`
+
+
+fillin:
+  enabled: true
+  param:
+    name: test
+    converters:         # Converters to apply
+      htmlentities:     [first_name, comments]
+      htmlspecialchars: [comments]

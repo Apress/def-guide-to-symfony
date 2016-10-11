@@ -1,0 +1,10 @@
+Listing 6-4 - Sample Action Class, in `apps/myapp/modules/mymodule/actions/actions.class.php`
+
+
+class mymoduleActions extends sfActions
+{
+  public function executeIndex()
+  {
+
+  }
+}

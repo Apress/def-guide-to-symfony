@@ -1,0 +1,7 @@
+Listing 9-11 - Making a Link Call a POST Request
+
+
+<?php echo link_to('go to shopping cart', 'shoppingCart/add?id=100', 'post=true') ?>
+ => <a onclick="f = document.createElement('form'); document.body.appendChild(f);
+                f.method = 'POST'; f.action = this.href; f.submit();return false;"
+       href="/shoppingCart/add/id/100.html">go to shopping cart</a>

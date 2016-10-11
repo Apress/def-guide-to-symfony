@@ -1,0 +1,9 @@
+Listing 15-21 - The Test Browser Gives Access to the Elements of the Response by CSS Selectors
+
+
+$b = new sfTestBrowser();
+$b->initialize();
+$b->get('/foobar/edit/id/1')->
+    checkResponseElement('form input[type="hidden"][value="1"]', true->
+    checkResponseElement('form textarea[name="text1"]', 'foo')->
+    checkResponseElement('form input[type="submit"]', 1);

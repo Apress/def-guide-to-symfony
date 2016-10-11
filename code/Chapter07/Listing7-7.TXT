@@ -1,0 +1,15 @@
+Listing 7-7 - Including a Partial in a Template of the `mymodule` Module
+
+
+// Include the myapp/modules/mymodule/templates/_mypartial1.php partial
+// As the template and the partial are in the same module,
+// you can omit the module name
+<?php include_partial('mypartial1') ?>
+
+// Include the myapp/modules/foobar/templates/_mypartial2.php partial
+// The module name is compulsory in that case
+<?php include_partial('foobar/mypartial2') ?>
+
+// Include the myapp/templates/_mypartial3.php partial
+// It is considered as part of the 'global' module
+<?php include_partial('global/mypartial3') ?>

@@ -1,0 +1,6 @@
+Listing 14-39 - Example `edit` Header Partial, in `modules/articles/template/_edit_header.php`
+
+
+<?php if ($article->getNbComments() > 0): ?>
+  <h2>This article has <?php echo $article->getNbComments() ?> comments.</h2>
+<?php endif; ?>

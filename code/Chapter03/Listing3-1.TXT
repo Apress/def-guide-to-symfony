@@ -1,0 +1,17 @@
+Listing 3-1 - Sample Apache Configuration, in `apache/conf/httpd.conf`
+
+
+<VirtualHost *:80>
+  ServerName myapp.example.com
+  DocumentRoot "/home/steve/myproject/web"
+  DirectoryIndex index.php
+  Alias /sf /$sf_symfony_data_dir/web/sf
+  <Directory "/$sf_symfony_data_dir/web/sf">
+    AllowOverride All
+    Allow from All
+  </Directory>
+  <Directory "/home/steve/myproject/web">
+    AllowOverride All
+    Allow from All
+  </Directory>
+</VirtualHost>

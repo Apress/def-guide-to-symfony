@@ -1,0 +1,5 @@
+Listing 8-6 - Static Methods to Retrieve Records Are Available in the Peer Class
+
+
+$articles = ArticlePeer::retrieveByPks(array(123, 124, 125));
+// $articles is an array of objects of class Article

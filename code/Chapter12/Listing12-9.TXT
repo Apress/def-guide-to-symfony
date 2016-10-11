@@ -1,0 +1,19 @@
+Listing 12-9 - Clearing the Cache for a Given Action, in `modules/user/actions/actions.class.php`
+
+
+public function executeUpdate()
+{
+  // Update a user
+  $user_id = $this->getRequestParameter('id');
+  $user = UserPeer::retrieveByPk($user_id);
+  $this->foward404Unless($user);
+  $user->setName($this->getRequestParameter('name'));
+  ...
+  $user->save();
+
+  // Clear the cache for actions related to this user
+  $cacheManager = $this->getContext()->getViewCacheManager();
+  $cacheManager->remove('user/list');
+  $cacheManager->remove('user/show?id='.$user_id);
+  ...
+}

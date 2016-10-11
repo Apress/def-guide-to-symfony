@@ -1,0 +1,27 @@
+Listing 7-18 - Actions Have Access to the `sfResponse` Object Methods
+
+
+class mymoduleActions extends sfActions
+{
+  public function executeIndex()
+  {
+    $response = $this->getResponse();
+
+    // HTTP headers
+    $response->setContentType('text/xml');
+    $response->setHttpHeader('Content-Language', 'en');
+    $response->setStatusCode(403);
+    $response->addVaryHttpHeader('Accept-Language');
+    $response->addCacheControlHttpHeader('no-cache');
+
+    // Cookies
+    $response->setCookie($name, $content, $expire, $path, $domain);
+
+    // Metas and page headers
+    $response->addMeta('robots', 'NONE');
+    $response->addMeta('keywords', 'foo bar');
+    $response->setTitle('My FooBar Page');
+    $response->addStyleSheet('custom_style');
+    $response->addJavaScript('custom_behavior');
+  }
+}

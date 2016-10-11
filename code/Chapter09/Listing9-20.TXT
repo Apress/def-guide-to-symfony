@@ -1,0 +1,6 @@
+Listing 9-20 - Setting a Default Value for a Request Parameter
+
+
+article_by_id:
+  url:          /article/:id
+  param:        { module: article, action: read, id: 1, display: true }

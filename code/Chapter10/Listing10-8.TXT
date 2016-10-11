@@ -1,0 +1,10 @@
+Listing 10-8 - Select Country Tag Helper
+
+
+<?php echo select_country_tag('country', 'AL') ?>
+ => <select name="country" id="country">
+      <option value="AF">Afghanistan</option>
+      <option value="AL" selected="selected">Albania</option>
+      <option value="DZ">Algeria</option>
+      <option value="AS">American Samoa</option>
+  ...

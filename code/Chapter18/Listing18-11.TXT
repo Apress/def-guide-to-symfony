@@ -1,0 +1,9 @@
+Listing 18-11 - Enabling Persistent Database Connection Support, in `config/databases.yml`
+
+
+prod:
+  propel:
+    class:          sfPropelDatabase
+    param:
+      persistent:   true
+      dsn:          mysql://login:passwd@localhost/blog

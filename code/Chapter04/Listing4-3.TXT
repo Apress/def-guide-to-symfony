@@ -1,0 +1,3 @@
+Listing 4-3 - The `mymodule/templates/myActionSuccess.php` Template
+
+<p>Hello, world!</p>

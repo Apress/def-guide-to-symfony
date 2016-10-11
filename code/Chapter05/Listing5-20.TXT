@@ -1,0 +1,9 @@
+Listing 5-20 - Using Constants in YAML Files, Example from `autoload.yml`
+
+
+autoload:
+  symfony:
+    name:           symfony
+    path:           %SF_SYMFONY_LIB_DIR%
+    recursive:      on
+    exclude:        [vendor]

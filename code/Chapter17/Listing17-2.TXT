@@ -1,0 +1,9 @@
+Listing 17-2 - Multiple Inheritance Is Not Possible in PHP
+
+
+class Novel extends Story, Book
+{
+}
+
+$myNovel = new Novel();
+$myNovel->getISBN();

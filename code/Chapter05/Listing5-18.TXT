@@ -1,0 +1,9 @@
+Listing 5-18 - What Symfony Does When Parsing `settings.yml`
+
+
+sfConfig::add(array(
+  'sf_available' => true,
+  'sf_path_info_array' => 'SERVER',
+  'sf_path_info_key' => 'PATH_INFO',
+  'sf_url_format' => 'PATH',
+));

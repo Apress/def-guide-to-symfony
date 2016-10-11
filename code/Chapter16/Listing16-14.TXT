@@ -1,0 +1,11 @@
+Listing 16-14 - Sample Connection Settings for a Server Synchronization, in `myproject/config/properties.ini`
+
+
+[symfony]
+  name=myproject
+
+[production]
+  host=myapp.example.com
+  port=22
+  user=myuser
+  dir=/home/myaccount/myproject/

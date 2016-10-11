@@ -1,0 +1,6 @@
+Listing 6-22 - Changing Session Lifetime, in `apps/myapp/config/settings.yml`
+
+
+default:
+  .settings:
+    timeout:     1800           # Session lifetime in seconds

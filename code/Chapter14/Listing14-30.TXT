@@ -1,0 +1,8 @@
+Listing 14-30 - Handling Many-to-Many Relationships with a `through_class` Parameter
+
+
+edit:
+  fields:
+    article_author: { type: admin_double_list,
+                      params: through_class=ArticleAuthor }
+

@@ -1,0 +1,5 @@
+Listing 7-27 - Sample Application `view.yml`
+
+
+default:
+  stylesheets: [main]

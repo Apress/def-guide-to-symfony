@@ -1,0 +1,20 @@
+Listing 9-25 - Using `sfRouting` to Get Information About the Current Route
+
+
+// If you require a URL like
+http://myapp.example.com/article/21
+
+// Use the following in article/read action
+$uri = sfRouting::getInstance()->getCurrentInternalUri();
+ => article/read?id=21
+
+$uri = sfRouting::getInstance()->getCurrentInternalUri(true);
+ => @article_by_id?id=21
+
+$rule = sfRouting::getInstance()->getCurrentRouteName();
+ => article_by_id
+
+// If you just need the current module/action names,
+// remember that they are actual request parameters
+$module = $this->getRequestParameter('module');
+$action = $this->getRequestParameter('action');

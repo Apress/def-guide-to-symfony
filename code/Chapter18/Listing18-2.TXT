@@ -1,0 +1,17 @@
+Listing 18-2 - Retrieving Details About a Related Class in a Loop
+
+
+// In the action
+$this->articles = ArticlePeer::doSelect(new Criteria());
+
+// Database query issued by doSelect()
+SELECT article.id, article.title, article.author_id, ...
+FROM   article
+
+// In the template
+<ul>
+<?php foreach ($articles as $article): ?>
+  <li><?php echo $article->getTitle() ?>,
+    written by <?php echo $article->getAuthor()->getName() ?></li>
+<?php endforeach; ?>
+</ul>

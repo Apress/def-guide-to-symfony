@@ -1,0 +1,8 @@
+Listing 11-9 - Ajax Link with the `link_to_remote()` Helper
+
+
+<div id="feedback"></div>
+<?php echo link_to_remote('Delete this post', array(
+    'update' => 'feedback',
+    'url'    => 'post/delete?id='.$post->getId(),
+)) ?>

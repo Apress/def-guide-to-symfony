@@ -1,0 +1,22 @@
+Listing 8-17 - Sample Database Connection Settings, in `myproject/config/databases.yml`
+
+
+prod:
+  propel:
+    param:
+      host:               mydataserver
+      username:           myusername
+      password:           xxxxxxxxxx
+
+all:
+  propel:
+    class:                sfPropelDatabase
+    param:
+      phptype:            mysql     # Database vendor
+      hostspec:           localhost
+      database:           blog
+      username:           login
+      password:           passwd
+      port:               80
+      encoding:           utf-8     # Default charset for table creation
+      persistent:         true      # Use persistent connections

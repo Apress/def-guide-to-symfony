@@ -1,0 +1,7 @@
+Listing 18-13 - Example Action Returning Content Text Directly
+
+
+public function executeFastAction()
+{
+  return $this->renderText("<html><body>Hello, World!</body></html>");
+}

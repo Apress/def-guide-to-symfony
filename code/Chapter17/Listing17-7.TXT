@@ -1,0 +1,31 @@
+Listing 17-7 - A Class Can Be Extendable in Various Ways
+
+
+class BicycleRider
+{
+  protected $name = 'John';
+
+  public function getName()
+  {
+    return $this->name;
+  }
+
+  public function sprint($distance)
+  {
+    echo $this->name." sprints ".$distance." meters\n";
+    sfMixer::callMixins(); // The sprint() method is extendable
+  }
+
+  public function climb()
+  {
+    echo $this->name.' climbs';
+    sfMixer::callMixins('slope'); // The climb() method is extendable here
+    echo $this->name.' gets to the top';
+    sfMixer::callMixins('top'); // And also here
+  }
+
+  public function __call($method, $arguments)
+  {
+    return sfMixer::callMixins(); // The BicyleRider class is extendable
+  }
+}

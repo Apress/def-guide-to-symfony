@@ -1,0 +1,17 @@
+Listing 6-34 - Sample Filter Activation File, Saved in `apps/myapp/config/filters.yml`
+
+
+rendering: ~
+web_debug: ~
+security:  ~
+
+remember:                 # Filters need a unique name
+  class: rememberFilter   
+  param:
+    cookie_name: MyWebSite
+    condition:   %APP_ENABLE_REMEMBER_ME%
+
+cache:     ~
+common:    ~
+flash:     ~
+execution: ~

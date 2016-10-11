@@ -1,0 +1,22 @@
+Listing 5-12 - The Structure of Symfony Configuration Files
+
+
+# Production environment settings
+prod:
+  ...
+
+# Development environment settings
+dev:
+  ...
+
+# Test environment settings
+test:
+  ...
+
+# Custom environment settings
+myenv:
+  ...
+
+# Settings for all environments
+all:
+  ...

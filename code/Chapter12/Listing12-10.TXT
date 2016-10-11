@@ -1,0 +1,12 @@
+Listing 12-10 - Clearing Partials from the Cache
+
+
+<?php include_partial('user/my_partial', array(
+  'user'         => $user,
+  'sf_cache_key' => $user->getId()
+) ?>
+
+// Is identified in the cache as
+/sf_cache_partial/user/_my_partial/sf_cache_key/12
+
+// Clear _my_partial for a specific user in the cache with $cacheManager->remove('@sf_cache_partial?module=user&action=_my_partial&sf_cache_key='.$user->getId());

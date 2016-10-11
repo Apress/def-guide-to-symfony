@@ -1,0 +1,17 @@
+Listing 15-30 - Example Functional Test Naming Practice
+
+
+$browser->
+  get('/foobar/index')->
+  isStatusCode(200)->
+  isRequestParameter('module', 'foobar')->
+  isRequestParameter('action', 'index')->
+  checkResponseElement('body', '/foobar/')
+;
+
+
+# get /comment/index
+ok 1 - status code is 200
+ok 2 - request parameter module is foobar
+ok 3 - request parameter action is index
+ok 4 - response selector body matches regex /foobar/

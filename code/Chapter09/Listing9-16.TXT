@@ -1,0 +1,10 @@
+Listing 9-16 - Rules Are Parsed Top to Bottom
+
+
+my_rule:
+  url:   /foo/:bar
+  param: { module: mymodule, action: myaction }
+
+# default rules
+default:
+  url:   /:module/:action/*

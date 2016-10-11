@@ -1,0 +1,18 @@
+Listing 14-31 - Defining Interactions for Each View, in `backend/modules/article/config/generator.yml`
+
+
+list:
+  title:          List of Articles
+  object_actions:
+    _edit:         ~
+    _delete:       ~
+  actions:
+    _create:       ~
+
+edit:
+  title:          Body of article %%title%%
+  actions:
+    _list:         ~
+    _save:         ~
+    _save_and_add: ~
+    _delete:       ~

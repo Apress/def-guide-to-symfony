@@ -1,0 +1,9 @@
+Listing 16-4 - Adding a Custom Log Message
+
+
+// From an action
+$this->logMessage($message, $level);
+
+// From a template
+<?php use_helper('Debug') ?>
+<?php log_message($message, $level) ?>

@@ -1,0 +1,12 @@
+Listing 10-22 - Displaying Error Messages at the Top of the Form, in `templates/indexSuccess.php`
+
+
+<?php if ($sf_request->hasErrors()): ?>
+  <p>The data you entered seems to be incorrect.
+  Please correct the following errors and resubmit:</p>
+  <ul>
+  <?php foreach($sf_request->getErrors() as $name => $error): ?>
+    <li><?php echo $name ?>: <?php echo $error ?></li>
+  <?php endforeach; ?>
+  </ul>
+<?php endif; ?>

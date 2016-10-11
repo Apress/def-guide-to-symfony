@@ -1,0 +1,14 @@
+Listing 18-17 - Syntax of the `sfProcessCache` Methods
+
+
+// Storing data in the process cache
+sfProcessCache::set($name, $value, $lifetime);
+
+// Retrieving data
+$value = sfProcessCache::get($name);
+
+// Checking if a piece of data exists in the process cache
+$value_exists = sfProcessCache::has($name);
+
+// Clear the process cache
+sfProcessCache::clear();

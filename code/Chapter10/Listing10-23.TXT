@@ -1,0 +1,11 @@
+Listing 10-23 - Displaying Error Messages Inside the Form, in `templates/indexSuccess.php`
+
+
+<?php echo form_tag('contact/send') ?>
+  <?php if ($sf_request->hasError('name')): ?>
+    <?php echo $sf_request->getError('name') ?> <br />
+  <?php endif; ?>
+  Name:    <?php echo input_tag('name') ?><br />
+  ...
+  <?php echo submit_tag() ?>
+</form>

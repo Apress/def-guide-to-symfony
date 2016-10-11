@@ -1,0 +1,5 @@
+Listing 14-16 - Partial Field Properties Can Be Customized Under the `fields` Key
+
+
+fields:
+  article_link:   { name: Article }

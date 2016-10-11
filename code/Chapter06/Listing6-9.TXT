@@ -1,0 +1,11 @@
+Listing 6-9 - Actions That Will Call the `indexSuccess.php` and `listSuccess.php` Templates
+
+
+public function executeIndex()
+{
+  return sfView::SUCCESS;
+}
+
+public function executeList()
+{
+}

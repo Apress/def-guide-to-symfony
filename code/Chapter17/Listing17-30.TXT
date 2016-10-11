@@ -1,0 +1,7 @@
+Listing 17-30 - Installing the Plug-In
+
+
+> cp sfSamplePlugin-1.0.0.tgz /home/production/myproject/
+> cd /home/production/myproject/
+> php symfony plugin-install sfSamplePlugin-1.0.0.tgz
+

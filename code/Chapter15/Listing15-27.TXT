@@ -1,0 +1,11 @@
+Listing 15-27 - Functional Test Task Syntax
+
+
+// Test directory structure
+test/
+  functional/
+    frontend/
+      myModuleActionsTest.php
+      myScenarioTest.php
+    backend/
+      myOtherScenarioTest.php

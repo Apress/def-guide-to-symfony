@@ -1,0 +1,9 @@
+Listing 11-4 - Updating an Element in JavaScript with the `update_element_function()` Helper
+
+
+<div id="indicator">Data processing beginning</div>
+<?php echo javascript_tag(
+  update_element_function('indicator', array(
+    'content'  => "<strong>Data processing complete</strong>",
+  ))
+) ?>

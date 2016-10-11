@@ -1,0 +1,8 @@
+Listing 18-22 - Adding Your Classes to the Core Compile File, in `myapp/config/core_compile.yml`
+
+
+- %SF_ROOT_DIR%/lib/myClass.class.php
+- %SF_ROOT_DIR%/apps/myapp/lib/myToolkit.class.php
+- %SF_ROOT_DIR%/plugins/myPlugin/lib/myPluginCore.class.php
+...
+

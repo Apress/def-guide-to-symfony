@@ -1,0 +1,11 @@
+Listing 11-21 - Authorizing Script Execution in the Ajax Response
+
+
+<div id="feedback"></div>
+// If the response of the post/delete action contains JavaScript,
+// allow it to be executed by the browser
+<?php echo link_to_remote('Delete this post', array(
+    'update' => 'feedback',
+    'url'    => 'post/delete?id='.$post->getId(),
+    'script' => true,
+)) ?>

@@ -1,0 +1,5 @@
+Listing 14-15 - Example Partial for the list View, in modules/comment/templates/_article_link.php
+
+
+<?php echo link_to($comment->getArticle()->getTitle(),
+                   'article/edit?id='.$comment->getArticleId()) ?>

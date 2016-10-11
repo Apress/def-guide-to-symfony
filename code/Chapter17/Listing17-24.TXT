@@ -1,0 +1,10 @@
+Listing 17-24 - Example Schema Declaration in a Plug-In, in `myPlugin/config/schema.yml`
+
+
+propel:
+  _attributes:    { package: plugins.myPlugin.lib.model }
+  my_plugin_foobar:
+    _attributes:    { phpName: myPluginFoobar }
+      id:
+      name:           { type: varchar, size: 255, index: unique }
+      ...

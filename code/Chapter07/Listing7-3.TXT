@@ -1,0 +1,8 @@
+Listing 7-3 - Declaring the Use of a Helper
+
+
+// Use a specific helper group in this template
+<?php echo use_helper('Text') ?>
+...
+<h1>Description</h1>
+<p><?php echo auto_link_text($description) ?></p>

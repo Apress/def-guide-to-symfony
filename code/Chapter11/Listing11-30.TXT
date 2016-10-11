@@ -1,0 +1,8 @@
+Listing 11-30 - Example of a Response Compatible with the Autocomplete Tag
+
+
+<ul>
+  <li>suggestion1</li>
+  <li>suggestion2</li>
+  ...
+</ul>

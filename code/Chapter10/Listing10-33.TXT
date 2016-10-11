@@ -1,0 +1,6 @@
+Listing 10-33 - Form with Array Syntax
+
+
+<label for="story[title]">Title:</label>
+<input type="text" name="story[title]" id="story[title]" value="default value"
+       size="45" />

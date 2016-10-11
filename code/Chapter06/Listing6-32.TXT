@@ -1,0 +1,7 @@
+Listing 6-32 - Default Parameters of the rendering Filter, in $sf_symfony_data_dir/config/filters.yml
+
+
+rendering:
+  class: sfRenderingFilter   # Filter class
+  param:                     # Filter parameters
+    type: rendering

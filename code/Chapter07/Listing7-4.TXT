@@ -1,0 +1,25 @@
+Listing 7-4 - Common Default Helpers
+
+
+// Helper group
+<?php echo use_helper('HelperName') ?>
+<?php echo use_helper('HelperName1', 'HelperName2', 'HelperName3') ?>
+
+// Tag group
+<?php echo tag('input', array('name' => 'foo', 'type' => 'text')) ?>
+<?php echo tag('input', 'name=foo type=text') ?>  // Alternative options syntax
+ => <input name="foo" type="text" />
+<?php echo content_tag('textarea', 'dummy content', 'name=foo') ?>
+ => <textarea name="foo">dummy content</textarea>
+
+// Url group
+<?php echo link_to('click me', 'mymodule/myaction') ?>
+=> <a href="/route/to/myaction">click me</a>  // Depends on the routing settings
+
+// Asset group
+<?php echo image_tag('myimage', 'alt=foo size=200x100') ?>
+ => <img src="/images/myimage.png" alt="foo" width="200" height="100"/>
+<?php echo javascript_include_tag('myscript') ?>
+ => <script language="JavaScript" type="text/javascript" src="/js/myscript.js"></script>
+<?php echo stylesheet_tag('style') ?>
+ => <link href="/stylesheets/style.css" media="screen" rel="stylesheet"type="text/css" />

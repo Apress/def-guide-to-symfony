@@ -1,0 +1,18 @@
+Listing 13-8 - Dealing with i18n Objects
+
+
+$product = ProductPeer::retrieveByPk(1);
+$product->setCulture('fr');
+$product->setName('Nom du produit');
+$product->save();
+
+$product->setCulture('en');
+$product->setName('Product name');
+$product->save();
+
+echo $product->getName();
+ => 'Product name'
+
+$product->setCulture('fr');
+echo $product->getName();
+ => 'Nom du produit'

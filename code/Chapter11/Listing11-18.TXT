@@ -1,0 +1,9 @@
+Listing 11-18 - Using the Confirm Parameter to Ask for a Confirmation Before Calling the Remote Function
+
+
+<div id="feedback"></div>
+<?php echo link_to_remote('Delete this post', array(
+    'update'   => 'feedback',
+    'url'      => 'post/delete?id='.$post->getId(),
+    'confirm'  => 'Are you sure?',
+)) ?>

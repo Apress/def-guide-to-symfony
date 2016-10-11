@@ -1,0 +1,12 @@
+Listing 9-9 - Link Helpers Accept Additional Options
+
+
+// Additional options as an associative array
+<?php echo link_to('my article', 'article/read?title=Finance_in_France', array(
+  'class'  => 'foobar',
+  'target' => '_blank'
+)) ?>
+
+// Additional options as a string (same result)
+<?php echo link_to('my article', 'article/read?title=Finance_in_France','class=foobar target=_blank') ?>
+ => <a href="/routed/url/to/Finance_in_France" class="foobar" target="_blank">my article</a>

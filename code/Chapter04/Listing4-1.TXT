@@ -1,0 +1,12 @@
+Listing 4-1 - The Default Generated Action, in `actions/actions.class.php`
+
+
+<?php
+
+class mymoduleActions extends sfActions
+{
+  public function executeIndex()
+  {
+    $this->forward('default', 'module');
+  }
+}

@@ -1,0 +1,12 @@
+Listing 6-35 - Getting the Parameter Value, in `apps/myapp/lib/rememberFilter.class.php`
+
+
+class rememberFilter extends sfFilter
+{
+  public function execute ($filterChain)
+  {
+      ...
+      if ($request->getCookie($this->getParameter('cookie_name')))
+      ...
+  }
+}

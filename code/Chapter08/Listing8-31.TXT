@@ -1,0 +1,13 @@
+Listing 8-31 - Column Details Deduced from the Column Name
+
+
+// Empty columns named id are considered primary keys
+id:         { type: integer, required: true, primaryKey: true, autoIncrement: true }
+
+// Empty columns named XXX_id are considered foreign keys
+foobar_id:  { type: integer, foreignTable: db_foobar, foreignReference: id }
+
+// Empty columns named created_at, updated at, created_on and updated_on
+// are considered dates and automatically take the timestamp type
+created_at: { type: timestamp }
+updated_at: { type: timestamp }

@@ -1,0 +1,10 @@
+Listing 14-32 - Defining a Custom Interaction
+
+
+list:
+  title:          List of Articles
+  object_actions:
+    _edit:        -
+    _delete:      -
+    addcomment:   { name: Add a comment, action: addComment,
+                    icon: backend/addcomment.png }

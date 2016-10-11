@@ -1,0 +1,51 @@
+Listing 15-8 - Using Fixture Files in Unit Tests
+
+
+// In fixtures.yml:
+-
+  input:   '/test'
+  output:  true
+  comment: isPathAbsolute() returns true if path is absolute
+-
+  input:   '\\test'
+  output:  true
+  comment: isPathAbsolute() returns true if path is absolute
+-
+  input:   'C:\\test'
+  output:  true
+  comment: isPathAbsolute() returns true if path is absolute
+-
+  input:   'd:/test'
+  output:  true
+  comment: isPathAbsolute() returns true if path is absolute
+-
+  input:   'test'
+  output:  false
+  comment: isPathAbsolute() returns false if path is relative
+-
+  input:   '../test'
+  output:  false
+  comment: isPathAbsolute() returns false if path is relative
+-
+  input:   '..\\test'
+  output:  false
+  comment: isPathAbsolute() returns false if path is relative
+
+// In testTest.php
+<?php
+
+include(dirname(__FILE__).'/../bootstrap/unit.php');
+include(dirname(__FILE__).'/../../config/config.php');
+require_once($sf_symfony_lib_dir.'/util/sfToolkit.class.php');
+require_once($sf_symfony_lib_dir.'/util/sfYaml.class.php');
+
+$testCases = sfYaml::load(dirname(__FILE__).'/fixtures.yml');
+
+$t = new lime_test(count($testCases), new lime_output_color());
+
+// isPathAbsolute()
+$t->diag('isPathAbsolute()');
+foreach ($testCases as $case)
+{
+  $t->is(sfToolkit::isPathAbsolute($case['input']), $case['output'],$case['comment']);
+}

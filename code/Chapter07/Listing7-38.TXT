@@ -1,0 +1,7 @@
+Listing 7-38 - Including a Component Slot with the Name `'sidebar'`
+
+
+...
+<div id="sidebar">
+  <?php include_component_slot('sidebar') ?>
+</div>

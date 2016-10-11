@@ -1,0 +1,10 @@
+Listing 17-10 - The Extension Mechanism Is Dynamic and Can Occur Even After Instantiation
+
+
+$simpleRider = new BicycleRider();
+$simpleRider->sprint(500);
+=> John sprints 500 meters
+sfMixer::register('BicycleRider:sprint', array('Steroids', 'breakRecord'));
+$simpleRider->sprint(500);
+=> John sprints 500 meters
+=> Nobody ever made 500 meters that fast before!

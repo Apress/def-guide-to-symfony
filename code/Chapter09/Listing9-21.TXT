@@ -1,0 +1,7 @@
+Listing 9-21 - Using the Rule Label Instead of the Module/Action
+
+
+<?php echo link_to('my article', 'article/read?id='.$article->getId()) ?>
+
+// can also be written as
+<?php echo link_to('my article', '@article_by_id?id='.$article->getId()) ?>

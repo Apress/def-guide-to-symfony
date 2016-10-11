@@ -1,0 +1,10 @@
+Listing 11-6 - Using the `if_javascript()` Helper to Allow Graceful Degradation
+
+
+<?php if_javascript(); ?>
+  <p>You have JavaScript enabled.</p>
+<?php end_if_javascript(); ?>
+
+<noscript>
+  <p>You don't have JavaScript enabled.</p>
+</noscript>

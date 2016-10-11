@@ -1,0 +1,6 @@
+Listing 9-5 - Showing the Front Controller Name in URLs, in `apps/myapp/settings.yml`
+
+
+prod:
+  .settings
+    no_script_name:  off

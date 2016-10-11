@@ -1,0 +1,12 @@
+Listing 8-30 - Indexes and Unique Indexes Alternative Syntax
+
+
+propel:
+  blog_article:
+    id:
+    title:            varchar(50)
+    created_at:
+    _indexes:
+      my_index:       [title, user_id]
+    _uniques:
+      my_other_index: [created_at]

@@ -1,0 +1,18 @@
+Listing 15-18 - Testing Redirections with `sfTestBrowser`
+
+
+$b = new sfTestBrowser();
+$b->initialize();
+$b->
+    get('/foobar/edit/id/1')->
+    click('go', array('name' => 'dummy'))->
+    isStatusCode(200)->
+    isRequestParameter('module', 'foobar')->
+    isRequestParameter('action', 'update')->
+
+    isRedirected()->      // Check that the response is a redirect
+    followRedirect()->    // Manually follow the redirection
+
+    isStatusCode(200)->
+    isRequestParameter('module', 'foobar')->
+    isRequestParameter('action', 'show');

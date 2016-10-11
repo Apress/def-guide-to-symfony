@@ -1,0 +1,10 @@
+Listing 7-26 - File Inclusion Result--No Need for a Helper Call in the Layout
+
+
+<head>
+...
+<link rel="stylesheet" type="text/css" media="screen" href="/css/mystyle1.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="/css/mystyle2.css" />
+<script language="javascript" type="text/javascript" src="/js/myscript.js">
+</script>
+</head>

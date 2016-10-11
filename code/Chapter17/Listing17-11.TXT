@@ -1,0 +1,7 @@
+Listing 17-11 - `callMixin()` Loops Over the Registered Mixins and Executes Them
+
+
+foreach (sfMixer::getCallables($class.':'.$method.':'.$hookName) as $callable)
+{
+  call_user_func_array($callable, $parameters);
+}

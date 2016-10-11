@@ -1,0 +1,15 @@
+Listing 7-16 - Sample Module-Level `view.yml`
+
+
+editSuccess:
+  metas:
+    title: Edit your profile
+
+editError:
+  metas:
+    title: Error in the profile edition
+
+all:
+  stylesheets: [my_style]
+  metas:
+    title: My website

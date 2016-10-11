@@ -1,0 +1,9 @@
+Listing 17-18 - Installing a Plug-In from an Archive
+
+
+> cd plugins
+> tar -zxpf myPlugin.tgz
+> cd ..
+> ln -sf plugins/myPlugin/web web/myPlugin
+> php symfony cc
+

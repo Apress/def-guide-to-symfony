@@ -1,0 +1,8 @@
+Listing 19-6 - The Paths to the Framework Files, in `myproject/config/config.php`
+
+
+<?php
+
+// symfony directories
+$sf_symfony_lib_dir  = '/path/to/symfony/lib';
+$sf_symfony_data_dir = '/path/to/symfony/data';

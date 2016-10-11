@@ -1,0 +1,11 @@
+Listing 14-33 - Implementing the Custom Interaction Action, in `actions/actions.class.php`
+
+
+public function executeAddComment()
+{
+  $comment = new Comment();
+  $comment->setArticleId($this->getRequestParameter('id'));
+  $comment->save();
+
+  $this->redirect('comment/edit?id='.$comment->getId());
+}

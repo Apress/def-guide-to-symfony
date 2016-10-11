@@ -1,0 +1,10 @@
+Listing 8-15 - Custom SQL Query with Creole
+
+
+$connection = Propel::getConnection();
+$query = 'SELECT MAX(%s) AS max FROM %s';
+$query = sprintf($query, ArticlePeer::CREATED_AT, ArticlePeer::TABLE_NAME);
+$statement = $connnection->prepareStatement($query);
+$resultset = $statement->executeQuery();
+$resultset->next();
+$max = $resultset->getInt('max');

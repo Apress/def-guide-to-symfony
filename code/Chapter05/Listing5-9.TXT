@@ -1,0 +1,9 @@
+Listing 5-9 - Category Headers Look Like Keys, But Start with a Dot
+
+
+all:
+  .general:
+    tax:        19.6
+
+  mail:
+    webmaster:  webmaster@example.com

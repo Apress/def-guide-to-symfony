@@ -1,0 +1,5 @@
+Listing 7-36 - Layout Removal in `view.yml`
+
+
+indexSuccess:
+  has_layout: false

@@ -1,0 +1,21 @@
+Listing 14-9 - Choosing the Fields to Display, in `modules/comment/config/generator.yml`
+
+
+generator:
+  class:              sfPropelAdminGenerator
+  param:
+    model_class:      Comment
+    theme:            default
+
+    fields:
+      article_id:     { name: Article }
+      created_at:     { name: Published on }
+      content:        { name: Body }
+
+    list:
+      display:        [id, article_id, content]
+
+    edit:
+      display:
+        NONE:         [article_id]
+        Editable:     [author, content, created_at]

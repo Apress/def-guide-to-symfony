@@ -1,0 +1,14 @@
+Listing 12-7 - Registering Your Custom Filter, in `myapp/config/filters.yml`
+
+
+...
+security: ~
+
+conditionalCache:
+  class: conditionalCacheFilter
+  param:
+    pages:
+      - { module: article, action: show }
+
+cache: ~
+...

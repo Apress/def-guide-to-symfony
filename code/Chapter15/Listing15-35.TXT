@@ -1,0 +1,15 @@
+Listing 15-35 - Testing the Cache with the `isCached()` Method
+
+
+<?php
+
+include(dirname(__FILE__).'/../../bootstrap/functional.php');
+
+// Create a new test browser
+$b = new sfTestBrowser();
+$b->initialize();
+
+$b->get('/mymodule');
+$b->isCached(true);       // Checks that the response comes from the cache
+$b->isCached(true, true); // Checks that the cached response comes with layout
+$b->isCached(false);      // Checks that the response doesn't come from the cache

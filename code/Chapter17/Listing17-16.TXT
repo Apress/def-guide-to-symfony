@@ -1,0 +1,6 @@
+Listing 17-16 - Installing a Plug-In from a Downloaded PEAR Package
+
+
+> cd myproject
+> php symfony plugin-install /home/path/to/downloads/pluginName.tgz
+> php symfony cc

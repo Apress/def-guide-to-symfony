@@ -1,0 +1,6 @@
+Listing 15-37 - Adding a Test File to the Test Suite, in `web/selenium/test/TestSuite.html`
+
+
+...
+<tr><td><a href='./testIndex.html'>My First Test</a></td></tr>
+...

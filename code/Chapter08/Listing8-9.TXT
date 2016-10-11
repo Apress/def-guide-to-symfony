@@ -1,0 +1,13 @@
+Listing 8-9 - Foreign Keys Are Translated into a Special Setter
+
+
+$comment = new Comment();
+$comment->setAuthor('Steve');
+$comment->setContent('Gee, dude, you rock: best article ever!); 
+
+// Attach this comment to the previous $article object
+$comment->setArticle($article);
+
+// Alternative syntax
+// Only makes sense if the object is already saved in the database
+$comment->setArticleId($article->getId());

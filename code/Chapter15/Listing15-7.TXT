@@ -1,0 +1,19 @@
+Listing 15-7 - Using Stubs in Unit Tests
+
+
+require_once(dirname(__FILE__).'/../../lib/WebService.class.php');
+require_once(dirname(__FILE__).'/../../lib/MapAPI.class.php');
+
+class testWebService extends WebService
+{
+  public static function fetch()
+  {
+    return file_get_contents(dirname(__FILE__).'/fixtures/data/fake_web_service.xml');
+  }
+}
+
+$myMap = new MapAPI();
+
+$t = new lime_test(1, new lime_output_color());
+
+$t->is($myMap->getMapSize(testWebService::fetch(), 100);

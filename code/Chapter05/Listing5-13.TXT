@@ -1,0 +1,8 @@
+Listing 5-13 - The Default Configuration, in `$sf_symfony_data_dir/config/settings.yml`
+
+
+ # Default settings:
+ default:
+   default_module:         default
+   default_action:         index
+   ...

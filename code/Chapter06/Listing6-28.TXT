@@ -1,0 +1,11 @@
+Listing 6-28 - Credentials Combination Syntax
+
+
+editArticle:
+  credentials: [ admin, editor ]              # admin AND editor
+
+publishArticle:
+  credentials: [ admin, publisher ]           # admin AND publisher
+
+userManagement:
+  credentials: < admin, superuser >         # admin OR superuser

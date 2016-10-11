@@ -1,0 +1,17 @@
+Listing 12-8 - Clearing the Cache
+
+
+// Erase the whole cache
+> symfony clear-cache
+
+// Short syntax
+> symfony cc
+
+// Erase only the cache of the myapp application
+> symfony clear-cache myapp
+
+// Erase only the HTML cache of the myapp application
+> symfony clear-cache myapp template
+
+// Erase only the configuration cache of the myapp application
+> symfony clear-cache myapp config

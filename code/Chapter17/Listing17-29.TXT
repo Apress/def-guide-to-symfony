@@ -1,0 +1,5 @@
+Listing 17-29 - Packaging a Plug-In As a PEAR Package
+
+
+> cd sfSamplePlugin
+> pear package

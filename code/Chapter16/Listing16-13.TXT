@@ -1,0 +1,9 @@
+Listing 16-13 - Adding a Record to a Related Table, in `data/fixtures/import_data.yml`
+
+
+Comment:
+  first_comment:
+    article_id:   first_post
+    author:       Anonymous
+    content:      Your prose is too verbose. Write shorter sentences.
+	

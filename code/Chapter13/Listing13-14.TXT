@@ -1,0 +1,18 @@
+Listing 13-14 - An XLIFF Dictionary, in `myapp/i18n/messages.fr.xml`
+
+
+<?xml version="1.0" ?>
+<xliff version="1.0">
+  <file orginal="global" source-language="en_US" datatype="plaintext">
+    <body>   
+      <trans-unit id="1">
+        <source>Welcome to our website.</source>
+        <target>Bienvenue sur notre site web.</target>
+      </trans-unit>              
+      <trans-unit id="2">
+        <source>Today's date is </source>
+        <target>La date d'aujourd'hui est </target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

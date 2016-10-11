@@ -1,0 +1,9 @@
+Listing 5-3 - Defining Long and Multiline Strings
+
+
+accomplishment: >           # Folded style, introduced by >
+  Mark set a major league   # Each line break is folded to a space
+  home run record in 1998.  # Makes YAML more readable
+stats: |                    # Literal style, introduced by |
+  65 Home Runs              # All line breaks count
+  0.278 Batting Average     # Indentation doesn't appear in the resulting string

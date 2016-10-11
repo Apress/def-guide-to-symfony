@@ -1,0 +1,13 @@
+Listing 10-9 - Select Language Tag Helper
+
+
+<?php echo select_language_tag('language', 'en') ?>
+ => <select name="language" id="language">
+      ...
+      <option value="elx">Elamite</option>
+      <option value="en" selected="selected">English</option>
+      <option value="enm">English, Middle (1100-1500)</option>
+      <option value="ang">English, Old (ca.450-1100)</option>
+      <option value="myv">Erzya</option>
+      <option value="eo">Esperanto</option>
+      ...

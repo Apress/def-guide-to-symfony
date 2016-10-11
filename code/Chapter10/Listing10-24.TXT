@@ -1,0 +1,11 @@
+Listing 10-24 - Displaying Error Messages Inside the Form, the Short Way
+
+
+<?php use_helper('Validation') ?>
+<?php echo form_tag('contact/send') ?>
+
+           <?php echo form_error('name') ?><br />
+  Name:    <?php echo input_tag('name') ?><br />
+  ...
+  <?php echo submit_tag() ?>
+</form>

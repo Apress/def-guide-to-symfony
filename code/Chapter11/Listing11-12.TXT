@@ -1,0 +1,17 @@
+Listing 11-12 - A Form with Regular and Ajax Submission
+
+
+<div id="item_list"></div>
+<?php echo form_tag('@item_add_regular') ?>
+  <label for="item">Item:</label>
+  <?php echo input_tag('item') ?>
+  <?php if_javascript(); ?>
+    <?php echo submit_to_remote('ajax_submit', 'Add in Ajax', array(
+        'update'   => 'item_list',
+        'url'      => '@item_add',
+    )) ?>
+  <?php end_if_javascript(); ?>
+  <noscript>
+    <?php echo submit_tag('Add') ?>
+  </noscript>
+</form>

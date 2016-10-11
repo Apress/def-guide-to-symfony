@@ -1,0 +1,117 @@
+Listing 10-2 - Standard Form Helpers Syntax
+
+
+// Text field (input)
+<?php echo input_tag('name', 'default value') ?>
+ => <input type="text" name="name" id="name" value="default value" />
+
+// All form helpers accept an additional options parameter
+// It allows you to add custom attributes to the generated tag
+<?php echo input_tag('name', 'default value', 'maxlength=20') ?>
+ => <input type="text" name="name" id="name" value="default value"maxlength="20" />
+
+// Long text field (text area)
+<?php echo textarea_tag('name', 'default content', 'size=10x20') ?>
+ => <textarea name="name" id="name" cols="10" rows="20">
+      default content
+    </textarea>
+
+// Check box
+<?php echo checkbox_tag('single', 1, true) ?>
+<?php echo checkbox_tag('driverslicense', 'B', false) ?>
+ => <input type="checkbox" name="single" id="single" value="1"checked="checked" />
+    <input type="checkbox" name="driverslicense" id="driverslicense"value="B" />
+
+// Radio button
+<?php echo radiobutton_tag('status[]', 'value1', true) ?>
+<?php echo radiobutton_tag('status[]', 'value2', false) ?>
+ => <input type="radio" name="status[]" id="status_value1" value="value1"checked="checked" />
+    <input type="radio" name="status[]" id="status_value2" value="value2" />
+
+// Dropdown list (select)
+<?php echo select_tag('payment',
+  '<option selected="selected">Visa</option>
+   <option>Eurocard</option>
+   <option>Mastercard</option>')
+?>
+ => <select name="payment" id="payment">
+      <option selected="selected">Visa</option>
+      <option>Eurocard</option>
+      <option>Mastercard</option>
+    </select>
+
+// List of options for a select tag
+<?php echo options_for_select(array('Visa', 'Eurocard', 'Mastercard'), 0) ?>
+ => <option value="0" selected="selected">Visa</option>
+    <option value="1">Eurocard</option>
+    <option value="2">Mastercard</option>
+
+// Dropdown helper combined with a list of options
+<?php echo select_tag('payment', options_for_select(array(
+  'Visa',
+  'Eurocard',
+  'Mastercard'
+), 0)) ?>
+ => <select name="payment" id="payment">
+      <option value="0" selected="selected">Visa</option>
+      <option value="1">Eurocard</option>
+      <option value="2">Mastercard</option>
+    </select>
+
+// To specify option names, use an associative array
+<?php echo select_tag('name', options_for_select(array(
+  'Steve'  => 'Steve',
+  'Bob'    => 'Bob',
+  'Albert' => 'Albert',
+  'Ian'    => 'Ian',
+  'Buck'   => 'Buck'
+), 'Ian')) ?>
+ => <select name="name" id="name">
+      <option value="Steve">Steve</option>
+      <option value="Bob">Bob</option>
+      <option value="Albert">Albert</option>
+      <option value="Ian" selected="selected">Ian</option>
+      <option value="Buck">Buck</option>
+    </select>
+
+// Dropdown list with multiple selection (selected values can be an array)
+<?php echo select_tag('payment', options_for_select(
+  array('Visa' => 'Visa', 'Eurocard' => 'Eurocard', 'Mastercard' => 'Mastercard'),
+  array('Visa', 'Mastecard'),
+), array('multiple' => true))) ?>
+
+ => <select name="payment[]" id="payment" multiple="multiple">
+      <option value="Visa" selected="selected">Visa</option>
+      <option value="Eurocard">Eurocard</option>
+      <option value="Mastercard">Mastercard</option>
+    </select>
+// Drop-down list with multiple selection (selected values can be an array)
+<?php echo select_tag('payment', options_for_select(
+  array('Visa' => 'Visa', 'Eurocard' => 'Eurocard', 'Mastercard' => 'Mastercard'),
+  array('Visa', 'Mastecard')
+), 'multiple=multiple') ?>
+ => <select name="payment" id="payment" multiple="multiple">
+      <option value="Visa" selected="selected">	
+      <option value="Eurocard">Eurocard</option>
+      <option value="Mastercard" selected="selected">Mastercard</option>
+    </select>
+
+// Upload file field
+<?php echo input_file_tag('name') ?>
+ => <input type="file" name="name" id="name" value="" />
+
+// Password field
+<?php echo input_password_tag('name', 'value') ?>
+ => <input type="password" name="name" id="name" value="value" />
+
+// Hidden field
+<?php echo input_hidden_tag('name', 'value') ?>
+ => <input type="hidden" name="name" id="name" value="value" />
+
+// Submit button (as text)
+<?php echo submit_tag('Save') ?>
+ => <input type="submit" name="submit" value="Save" />
+
+// Submit button (as image)
+<?php echo submit_image_tag('submit_img') ?>
+ => <input type="image" name="submit" src="/images/submit_img.png" />

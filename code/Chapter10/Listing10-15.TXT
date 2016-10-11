@@ -1,0 +1,10 @@
+Listing 10-15 - A Form with Only Object Helpers
+
+
+<?php echo form_tag('author/update') ?>
+  <?php echo object_input_hidden_tag($author, 'getId') ?>
+  Name: <?php echo object_input_tag($author, 'getName') ?><br />
+  Age:  <?php echo object_input_tag($author, 'getAge') ?><br />
+  Address: <br />
+         <?php echo object_textarea_tag($author, 'getAddress') ?>
+</form>

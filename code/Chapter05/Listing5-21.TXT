@@ -1,0 +1,6 @@
+Listing 5-21 - YAML Files Can Contain PHP
+
+
+all:
+  translation:
+    format:  <?php echo sfConfig::get('sf_i18n') == true ? 'xliff' : 'none' ?>

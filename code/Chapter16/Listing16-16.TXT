@@ -1,0 +1,7 @@
+Listing 16-16 - Setting the Action to Execute for an Unavailable Application, in `myapp/config/settings.yml`
+
+
+all:
+  .settings:
+    unavailable_module:     mymodule
+    unavailable_action:     maintenance

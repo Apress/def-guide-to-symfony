@@ -1,0 +1,7 @@
+Listing 14-25 - Adding Filtering of Empty Values on the `author` Field in the `list` View
+
+
+list:
+  fields:
+    author:   { filter_is_empty: true }
+  filters:    [article_id, author, created_at]

@@ -1,0 +1,6 @@
+Listing 7-43 - Disabling a Component Slot in `view.yml`
+
+
+all:
+  components:
+    sidebar:  []

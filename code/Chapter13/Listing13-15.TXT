@@ -1,0 +1,5 @@
+Listing 13-15 - A Translated Template
+
+
+Bienvenue sur notre site web. La date d'aujourd'hui est
+<?php echo format_date(date()) ?>

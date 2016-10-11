@@ -1,0 +1,11 @@
+Listing 17-21 - Listing Installed Plug-Ins
+
+
+> cd myproject
+> php symfony plugin-list
+
+
+Installed plugins:
+sfPrototypePlugin               1.0.0-stable # pear.symfony-project.com (symfony)
+sfSuperCachePlugin              1.0.0-stable # pear.symfony-project.com (symfony)
+sfThumbnail                     1.1.0-stable # pear.symfony-project.com (symfony)

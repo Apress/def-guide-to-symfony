@@ -1,0 +1,15 @@
+Listing 15-5 - Launching Unit Tests
+
+
+// Test directory structure
+test/
+  unit/
+    myFunctionTest.php
+    mySecondFunctionTest.php
+    foo/
+      barTest.php
+
+> symfony test-unit myFunction                   ## Run myFunctionTest.php
+> symfony test-unit myFunction mySecondFunction  ## Run both tests
+> symfony test-unit 'foo/*'                      ## Run barTest.php
+> symfony test-unit '*'                          ## Run all tests (recursive)

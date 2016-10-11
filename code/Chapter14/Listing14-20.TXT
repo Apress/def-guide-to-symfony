@@ -1,0 +1,6 @@
+Listing 14-20 - Formatting a Date in the `list` View
+
+
+list:
+  fields:
+    created_at:         { name: Published, params: date_format='dd/MM' }

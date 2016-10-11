@@ -1,0 +1,11 @@
+Listing 12-3 - A Full `cache.yml` Example, in `myapp/modules/user/config/cache.yml`
+
+
+list:
+  enabled:    on
+show:
+  enabled:    on
+
+all:
+  with_layout: false   # Default value
+  lifetime:    86400   # Default value

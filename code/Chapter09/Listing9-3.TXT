@@ -1,0 +1,13 @@
+Listing 9-3 - The Routing System Interprets Incoming Request URLs
+
+
+// The user types (or clicks on) this external URL
+http://www.example.com/articles/finance/2006/activity-breakdown.html
+
+// The front controller sees that it matches the article_by_title rule
+// The routing system creates the following request parameters
+  'module'  => 'article'
+  'action'  => 'permalink'
+  'subject' => 'finance'
+  'year'    => '2006'
+  'title'   => 'activity-breakdown'

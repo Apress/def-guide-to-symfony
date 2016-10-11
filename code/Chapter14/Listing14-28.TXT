@@ -1,0 +1,8 @@
+Listing 14-28 - Including a Partial Field in the `edit` View
+
+
+edit:
+  display:        [id, nickname, _newpassword]
+  fields:
+    newpassword:  { name: Password, help: Enter a password to change it,
+                    leave the field blank to keep the current one }

@@ -1,0 +1,7 @@
+Listing 18-1 - Limiting the Number of Results Returned by a Criteria
+
+
+$c = new Criteria();
+$c->setOffset(10);  // Offset of the first record returned
+$c->setLimit(10);   // Number of records returned
+$articles = ArticlePeer::doSelect($c);

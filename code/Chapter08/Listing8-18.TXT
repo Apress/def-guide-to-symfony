@@ -1,0 +1,8 @@
+Listing 8-18 - Shorthand Database Connection Settings
+
+
+all:
+  propel:
+    class:          sfPropelDatabase
+    param:
+      dsn:          mysql://login:passwd@localhost/blog

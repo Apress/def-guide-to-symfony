@@ -1,0 +1,36 @@
+Listing 17-1 - Two Example Classes
+
+
+class Story
+{
+  protected $title = '';
+  protected $topic = '';
+  protected $characters = array();
+
+  public function __construct($title = '', $topic = '', $characters = array())
+  {
+    $this->title = $title;
+    $this->topic = $topic;
+    $this->characters = $characters;
+  }
+
+  public function getSummary()
+  {
+    return $this->title.', a story about '.$this->topic;
+  }
+}
+
+class Book
+{
+  protected $isbn = 0;
+
+  function setISBN($isbn = 0)
+  {
+    $this->isbn = $isbn;
+  }
+
+  public function getISBN()
+  {
+    return $this->isbn;
+  }
+}

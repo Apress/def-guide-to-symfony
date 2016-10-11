@@ -1,0 +1,9 @@
+Listing 8-7 - Generated Object Class Methods
+
+
+$article = new Article();
+$article->setTitle('My first article');
+$article->setContent('This is my very first article.\n Hope you enjoy it!');
+
+$title   = $article->getTitle();
+$content = $article->getContent();

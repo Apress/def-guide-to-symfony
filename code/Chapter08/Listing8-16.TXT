@@ -1,0 +1,10 @@
+Listing 8-16 - `created_at` and `updated_at` Columns Are Dealt with Automatically
+
+
+$comment = new Comment();
+$comment->setAuthor('Steve');
+$comment->save();
+
+// Show the creation date
+echo $comment->getCreatedAt();
+  => [date of the database INSERT operation]

@@ -1,0 +1,9 @@
+Listing 7-19 - Meta Definition As Key: Value Pairs in `view.yml`
+
+
+http_metas:
+  cache-control: public
+
+metas:
+  description:   Finance in France
+  keywords:      finance, France

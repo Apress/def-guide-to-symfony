@@ -1,0 +1,7 @@
+Listing 11-27 - Sample Template for Multiple Ajax Updates
+
+
+<h1 id="title">Basic letter</h1>
+<p>Dear <span id="name">name_here</span>,</p>
+<p>Your e-mail was received and will be answered shortly.</p>
+<p>Sincerely,</p>

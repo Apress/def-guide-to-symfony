@@ -1,0 +1,20 @@
+Listing 7-17 - Default Application-Level View Configuration, in `apps/myapp/config/view.yml`
+
+
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    title:        symfony project
+    robots:       index, follow
+    description:  symfony project
+    keywords:     symfony, project
+    language:     en
+
+  stylesheets:    [main]
+
+  javascripts:    [ ]
+
+  has_layout:     on
+  layout:         layout

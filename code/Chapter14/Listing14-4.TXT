@@ -1,0 +1,31 @@
+Listing 14-4 - Generated Administration Elements, in `cache/backend/ENV/modules/article/`
+
+
+// In actions/actions.class.php
+create           // Forwards to edit
+delete 	          // Deletes a record
+edit             // Displays a form to modify the fields of a record
+                 // And handles the form submission
+index            // Forwards to list
+list             // Displays the list of all the records of the table
+save             // Forwards to edit
+
+// In templates/
+_edit_actions.php
+_edit_footer.php
+_edit_form.php
+_edit_header.php
+_edit_messages.php
+_filters.php
+_list.php
+_list_actions.php
+_list_footer.php
+_list_header.php
+_list_messages.php
+_list_td_actions.php
+_list_td_stacked.php
+_list_td_tabular.php
+_list_th_stacked.php
+_list_th_tabular.php
+editSuccess.php
+listSuccess.php

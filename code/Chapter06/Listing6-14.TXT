@@ -1,0 +1,35 @@
+Listing 6-14 - Using `preExecute`, `postExecute`, and Custom Methods in an Action Class
+
+
+class mymoduleActions extends sfActions
+{
+  public function preExecute()
+  {
+    // The code inserted here is executed at the beginning of each action call
+    ...
+  }
+
+  public function executeIndex()
+  {
+    ...
+  }
+
+  public function executeList()
+  {
+    ...
+    $this->myCustomMethod();  // Methods of the action class are accessible
+  }
+
+  public function postExecute()
+  {
+    // The code inserted here is executed at the end of each action call
+    ...
+  }
+
+  protected function myCustomMethod()
+  {
+    // You can also add your own methods, as long as they don't start with "execute"
+    // In that case, it's better to declare them as protected or private
+    ...
+  }
+}

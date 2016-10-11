@@ -1,0 +1,9 @@
+Listing 8-19 - Database Connection Settings for SQLite Use a File Path As Host
+
+
+all:
+  propel:
+    class:          sfPropelDatabase
+    param:
+      phptype:  sqlite
+      database: %SF_DATA_DIR%/blog.db

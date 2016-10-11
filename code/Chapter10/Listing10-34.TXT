@@ -1,0 +1,6 @@
+Listing 10-34 - Validation File for a Form with Array Syntax
+
+
+fields:
+  story{title}:
+    required:     Yes

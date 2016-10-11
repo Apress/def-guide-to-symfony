@@ -1,0 +1,9 @@
+Listing 14-38 - Using a Custom Style Sheet Instead of the Default One
+
+
+generator:
+  class:              sfPropelAdminGenerator
+  param:
+    model_class:      Comment
+    theme:            default
+    css:              mystylesheet

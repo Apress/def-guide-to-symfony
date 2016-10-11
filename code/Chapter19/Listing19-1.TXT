@@ -1,0 +1,17 @@
+Listing 19-1 - Miscellaneous Configuration Settings, in `myapp/config/settings.yml`
+
+
+# Remove comments in core framework classes as defined in the core_compile.yml
+strip_comments:         on
+# Functions called when a class is requested and not already loaded
+# Expects an array of callables. Used by the framework bridges.
+autoloading_functions:  ~
+# Session timeout, in seconds
+timeout:                1800
+# Maximum number of forwards followed by the action before raising an exception
+max_forwards:           5
+# Global constants
+path_info_array:        SERVER
+path_info_key:          PATH_INFO
+url_format:             PATH
+

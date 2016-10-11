@@ -1,0 +1,11 @@
+Listing 15-10 - Launching a Single Functional Test from the Command Line
+
+> symfony test-functional frontend foobarActions
+
+# get /comment/index
+ok 1 - status code is 200
+ok 2 - request parameter module is foobar
+ok 3 - request parameter action is index
+not ok 4 - response selector body does not match regex /This is a temporary page/
+# Looks like you failed 1 tests of 4.
+1..4

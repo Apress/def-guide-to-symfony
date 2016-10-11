@@ -1,0 +1,11 @@
+Listing 4-2 - Adding an Action Is Like Adding an Execute Method to the Action Class
+
+
+<?php
+
+class mymoduleActions extends sfActions
+{
+  public function executeMyAction()
+  {
+  }
+}

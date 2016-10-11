@@ -1,0 +1,18 @@
+Listing 18-6 - Preparing an Array in the Action Is Useless If You Already Have One
+
+
+// In the action
+$articles = ArticlePeer::doSelect(new Criteria());
+$titles = array();
+foreach ($articles as $article)
+{
+  $titles[] = $article->getTitle();
+}
+$this->titles = $titles;
+
+// In the template
+<ul>
+<?php foreach ($titles as $title): ?>
+  <li><?php echo $title ?></li>
+<?php endforeach; ?>
+</ul>

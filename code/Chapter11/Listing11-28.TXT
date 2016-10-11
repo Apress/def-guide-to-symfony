@@ -1,0 +1,18 @@
+Listing 11-28 - Updating More Than One Element from a Remote Response
+
+
+<?php echo link_to_remote('Refresh the letter', array(
+  'url'      => 'publishing/refresh',
+  'complete' => 'updateJSON(request, json)'
+)) ?>
+
+<?php echo javascript_tag("
+function updateJSON(request, json)
+{
+  var nbElementsInResponse = json.length;
+  for (var i = 0; i < nbElementsInResponse; i++)
+  {
+     Element.update(json[i][0], json[i][1]);
+  }
+}
+") ?>

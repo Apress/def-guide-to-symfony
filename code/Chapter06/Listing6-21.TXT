@@ -1,0 +1,9 @@
+Listing 6-21 - Changing the Server Session Storage, in `apps/myapp/config/factories.yml`
+
+
+all:
+  storage:
+    class: sfMySQLSessionStorage
+    param:
+      db_table: SESSION_TABLE_NAME      # Name of the table storing the sessions
+      database: DATABASE_CONNECTION     # Name of the database connection to use

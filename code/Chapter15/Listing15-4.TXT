@@ -1,0 +1,25 @@
+Listing 15-4 - The Count of Test Run Helps You to Plan Tests
+
+> symfony test-unit example
+
+1..16
+# hello world
+ok 1 - the equal operator ignores type
+ok 2 - a string is converted to a number for comparison
+ok 3 - zero and one are not equal
+ok 4 - test01 follows the test numbering pattern
+ok 5 - tests01 does not follow the pattern
+ok 6 - one is inferior to two
+ok 7 - one and true are not identical
+ok 8 - 'foobar' is a string
+ok 9 - new creates object of the right class
+ok 10 - objects of class myObject do have a myMethod method
+ok 11 - the first and the second array are the same
+not ok 12 - the fooBar.php file was properly included
+#     Failed test (.\test\unit\testTest.php at line 27)
+#       Tried to include './fooBar.php'
+ok 13 - exception catched successfully
+ok 14 # SKIP skipping one test to keep the test count exact in the condition
+ok 15 # TODO one test left to do
+# Looks like you planned 16 tests but only ran 15.
+# Looks like you failed 1 tests of 16.

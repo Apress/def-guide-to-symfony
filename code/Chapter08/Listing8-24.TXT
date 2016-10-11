@@ -1,0 +1,7 @@
+Listing 8-24 - Attributes for Connections and Tables
+
+
+propel:
+  _attributes:   { noXsd: false, defaultIdMethod: none, package: lib.model }
+  blog_article:
+    _attributes: { phpName: Article }

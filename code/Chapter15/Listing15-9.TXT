@@ -1,0 +1,18 @@
+Listing 15-9 - Default Functional Test for a New Module, in `tests/functional/frontend/foobarActionsTest.php`
+
+
+<?php
+
+include(dirname(__FILE__).'/../../bootstrap/functional.php');
+
+// Create a new test browser
+$browser = new sfTestBrowser();
+$browser->initialize();
+
+$browser->
+  get('/foobar/index')->
+  isStatusCode(200)->
+  isRequestParameter('module', 'foobar')->
+  isRequestParameter('action', 'index')->
+  checkResponseElement('body', '!/This is a temporary page/')
+;

@@ -1,0 +1,9 @@
+Listing 9-24 - Defining a Rule in PHP
+
+
+sfRouting::getInstance()->prependRoute(
+  'article_by_id',                                  // Route name
+  '/article/:id',                                   // Route pattern
+  array('module' => 'article', 'action' => 'read'), // Default values
+  array('id' => '\d+'),                             // Requirements
+);

@@ -1,0 +1,26 @@
+Listing 18-9 - Using Direct Creole Access for Optimized Model Methods, in `lib/model/ArticlePeer.php`
+
+
+class ArticlePeer extends BaseArticlePeer
+{
+  public static function getArticleTitlesWithNbComments()
+  {
+    $connection = Propel::getConnection();
+    $query = 'SELECT %s as title, COUNT(%s) AS nb FROM %s LEFT JOIN %s ON %s = %sGROUP BY %s';
+    $query = sprintf($query,
+      ArticlePeer::TITLE, CommentPeer::ID,
+      ArticlePeer::TABLE_NAME, CommentPeer::TABLE_NAME,
+      ArticlePeer::ID, CommentPeer::ARTICLE_ID,
+      ArticlePeer::ID
+    );
+    $statement = $connnection->prepareStatement($query);
+    $resultset = $statement->executeQuery();
+    $results = array();
+    while ($resultset->next())
+    {
+      $results[] = array($resultset->getString('title'), $resultset->getInt('nb'));
+    }
+
+    return $results;
+  }
+}

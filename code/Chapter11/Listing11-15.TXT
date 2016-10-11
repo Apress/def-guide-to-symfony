@@ -1,0 +1,10 @@
+Listing 11-15 - Periodically Calling a Remote Function with `periodically_call_remote()`
+
+
+<div id="notification"></div>
+<?php echo periodically_call_remote(array(
+    'frequency' => 60,
+    'update'    => 'notification',
+    'url'       => '@watch',
+    'with'      => "'param=' + $('mycontent').value",
+)) ?>

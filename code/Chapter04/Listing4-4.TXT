@@ -1,0 +1,12 @@
+Listing 4-4 - The Usual PHP Syntax, Good for Actions, But Bad for Templates
+
+
+<p>Hello, world!</p>
+<?php
+
+if ($test)
+{
+  echo "<p>".time()."</p>";
+}
+
+?>

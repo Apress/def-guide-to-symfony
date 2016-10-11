@@ -1,0 +1,14 @@
+Listing 4-13 - Getting Data from the Request Parameter in the Action
+
+
+<?php
+
+class mymoduleActions extends sfActions
+{
+  ...
+
+  public function executeAnotherAction()
+  {
+    $this->name = $this->getRequestParameter('name');
+  }
+}

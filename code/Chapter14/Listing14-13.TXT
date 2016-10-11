@@ -1,0 +1,12 @@
+Listing 14-13 - Custom Getters Returning HTML Can Also Be Used As Additional Columns, in `modules/comment/config/generator.yml`
+
+
+generator:
+  class:              sfPropelAdminGenerator
+  param:
+    model_class:      Comment
+    theme:            default
+
+    list:
+      display:        [id, article_link, content]
+

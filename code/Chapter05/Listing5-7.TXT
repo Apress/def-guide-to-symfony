@@ -1,0 +1,8 @@
+Listing 5-7 - YAML Comments Syntax and Value Alignment
+
+
+# This is a comment line
+mail:
+  webmaster: webmaster@example.com
+  contact:   contact@example.com
+  admin:     admin@example.com   # extra spaces allow nice alignment of values

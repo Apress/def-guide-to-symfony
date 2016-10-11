@@ -1,0 +1,10 @@
+Listing 14-18 - Setting a Custom Title for Each View, in `backend/modules/article/config/generator.yml`
+
+
+list:
+  title:          List of Articles
+  ...
+
+edit:
+  title:          Body of article %%title%%
+  display:        [content]

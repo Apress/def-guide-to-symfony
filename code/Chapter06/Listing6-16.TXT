@@ -1,0 +1,20 @@
+Listing 6-16 - The `sfWebRequest` Object Knows How to Handle Attached Files
+
+
+class mymoduleActions extends sfActions
+{
+  public function executeUpload()
+  {
+    if ($this->getRequest()->hasFiles())
+    {
+      foreach ($this->getRequest()->getFileNames() as $fileName)
+      {
+        $fileSize  = $this->getRequest()->getFileSize($fileName);
+        $fileType  = $this->getRequest()->getFileType($fileName);
+        $fileError = $this->getRequest()->hasFileError($fileName);
+        $uploadDir = sfConfig::get('sf_upload_dir');
+        $this->getRequest()->moveFile('file', $uploadDir.'/'.$fileName);
+      }
+    }
+  }
+}

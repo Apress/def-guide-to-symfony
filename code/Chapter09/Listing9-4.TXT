@@ -1,0 +1,19 @@
+Listing 9-4 - The Routing System Formats Outgoing URLs in Templates
+
+
+// The url_for() helper transforms an internal URI into an external URL
+<a href="<?php echo url_for('article/permalink?subject=finance&year=2006&title=activity-breakdown') ?>">click here</a>
+
+// The helper sees that the URI matches the article_by_title rule
+// The routing system creates an external URL out of it
+ => <a href="http://www.example.com/articles/finance/2006/activity-breakdown.html">click here</a>
+
+// The link_to() helper directly outputs a hyperlink
+// and avoids mixing PHP with HTML
+<?php echo link_to(
+  'click here',
+  'article/permalink?subject=finance&year=2006&title=activity-breakdown'
+) ?>
+
+// Internally, link_to() will make a call to url_for() so the result is the same
+=> <a href="http://www.example.com/articles/finance/2006/activity-breakdown.html">click here</a>

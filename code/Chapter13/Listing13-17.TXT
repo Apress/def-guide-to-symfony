@@ -1,0 +1,5 @@
+Listing 13-17 - Translating Sentences Depending on the Value of Parameters
+
+
+<?php echo format_number_choice(
+  '[0]Nobody is logged|[1]There is 1 person logged|(1,+Inf]There are%1% persons logged', array('%1%' => count_logged()), count_logged()) ?>

@@ -1,0 +1,7 @@
+Listing 16-6 - Configuring Log Rotation, in `myapp/config/logging.yml`
+
+
+prod:
+  rotate:  on
+  period:  7       ## Log files are rotated every 7 days by default
+  history: 10      ## A maximum history of 10 log files is kept

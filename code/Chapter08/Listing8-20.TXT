@@ -1,0 +1,12 @@
+Listing 8-20 - Customizing the Model, in `lib/model/Article.php`
+
+
+<?php
+
+class Article extends BaseArticle
+{
+  public function __toString()
+  {
+    return $this->getTitle();  // getTitle() is inherited from BaseArticle
+  }
+}

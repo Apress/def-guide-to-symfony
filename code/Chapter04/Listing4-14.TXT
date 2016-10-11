@@ -1,0 +1,3 @@
+Listing 4-14 - Getting Data from the Request Parameter Directly in the Template
+
+<p>Hello, <?php echo $sf_params->get('name') ?>!</p>

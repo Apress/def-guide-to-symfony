@@ -1,0 +1,16 @@
+Listing 5-15 - Sample `app.yml` Configuration
+
+
+all:
+  version:        1.5
+  .general:
+    tax:          19.6
+  default_user:
+    name:         John Doe
+  mail:
+    webmaster:    webmaster@example.com
+    contact:      contact@example.com
+dev:
+  mail:
+    webmaster:    dummy@example.com
+    contact:      dummy@example.com

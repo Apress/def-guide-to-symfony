@@ -1,0 +1,5 @@
+Listing 11-2 - Triggering JavaScript by a Link with the `link_to_function()` Helper
+
+
+<?php echo link_to_function('Click me!', "alert('foobar')") ?>
+ => <a href="#" onClick="alert('foobar'); return none;">Click me!</a>

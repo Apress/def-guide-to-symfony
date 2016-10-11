@@ -1,0 +1,11 @@
+Listing 2-10 - The Layout Part of the View
+
+
+<html>
+  <head>
+    <title><?php echo $title ?></title>
+  </head>
+  <body>
+    <?php echo $content ?>
+  </body>
+</html>

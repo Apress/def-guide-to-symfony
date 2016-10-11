@@ -1,0 +1,10 @@
+Listing 8-12 - Retrieving Records by Criteria with `doSelect()`--Empty Criteria
+
+
+$c = new Criteria();
+$articles = ArticlePeer::doSelect($c);
+
+// Will result in the following SQL query
+SELECT blog_article.ID, blog_article.TITLE, blog_article.CONTENT,
+       blog_article.CREATED_AT
+FROM   blog_article;

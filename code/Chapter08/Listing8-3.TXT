@@ -1,0 +1,17 @@
+Listing 8-3 - Sample `schema.yml`
+
+
+propel:
+  blog_article:
+    _attributes: { phpName: Article }
+    id:
+    title:       varchar(255)
+    content:     longvarchar
+    created_at:
+  blog_comment:
+    _attributes: { phpName: Comment }
+    id:
+    article_id:
+    author:      varchar(255)
+    content:     longvarchar
+    created_at:

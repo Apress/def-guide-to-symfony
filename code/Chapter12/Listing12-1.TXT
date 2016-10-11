@@ -1,0 +1,6 @@
+Listing 12-1 - Activating the Cache, in `myapp/config/settings.yml`
+
+
+dev:
+  .settings:
+    cache:                  on

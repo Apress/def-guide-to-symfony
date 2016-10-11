@@ -1,0 +1,17 @@
+Listing 15-2 - Launching a Single Unit Test from the Command Line
+
+> symfony test-unit strtolower
+
+1..7
+# strtolower()
+ok 1 - strtolower() returns a string
+ok 2 - strtolower() transforms the input to lowercase
+ok 3 - strtolower() leaves lowercase characters unchanged
+ok 4 - strtolower() leaves non alphabetical characters unchanged
+ok 5 - strtolower() leaves blanks alone
+ok 6 - strtolower() deals with mixed case input
+not ok 7 - strtolower() transforms empty strings into foo
+#     Failed test (.\batch\test.php at line 21)
+#            got: ''
+#       expected: 'foo'
+# Looks like you failed 1 tests of 7.

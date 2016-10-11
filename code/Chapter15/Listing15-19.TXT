@@ -1,0 +1,8 @@
+Listing 15-19 - The Test Browser Gives Access to the Response Content As a DOM Object
+
+
+$b = new sfTestBrowser();
+$b->initialize();
+$b->get('/foobar/edit/id/1');
+$dom = $b->getResponseDom();
+$b->test()->is($dom->getElementsByTagName('input')->item(1)->getAttribute('type'),'text');

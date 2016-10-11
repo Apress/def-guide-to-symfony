@@ -1,0 +1,8 @@
+Listing 11-3 - Updating an Element in JavaScript
+
+
+<div id="indicator">Data processing beginning</div>
+<?php echo javascript_tag("
+  document.getElementById("indicator").innerHTML =
+    "<strong>Data processing complete</strong>";
+") ?>

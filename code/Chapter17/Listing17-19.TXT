@@ -1,0 +1,8 @@
+Listing 17-19 - Installing a Plug-In from a Source Version Repository
+
+
+> cd myproject
+> svn propedit svn:externals plugins
+  pluginName   http://svn.example.com/pluginName/trunk
+> svn up
+> php symfony cc

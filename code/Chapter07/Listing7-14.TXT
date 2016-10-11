@@ -1,0 +1,13 @@
+Listing 7-14 - Including a `'sidebar'` Slot in the Layout
+
+
+<div id="sidebar">
+<?php if (has_slot('sidebar'): ?>
+  <?php include_slot('sidebar') ?>
+<?php else: ?>
+  <!-- default sidebar code -->
+  <h1>Contextual zone</h1>
+  <p>This zone contains links and information
+  relative to the main content of the page.</p>
+<?php endif; ?>
+</div>

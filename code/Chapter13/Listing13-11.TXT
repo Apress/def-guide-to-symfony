@@ -1,0 +1,6 @@
+Listing 13-11 - Activating Interface Translation, in `myapp/config/settings.yml`
+
+
+all:
+  .settings:
+    i18n: on

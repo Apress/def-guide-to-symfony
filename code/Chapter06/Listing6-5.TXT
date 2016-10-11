@@ -1,0 +1,15 @@
+Listing 6-5 - Action Class with Two Actions, in myapp/modules/mymodule/actions/actions.cla`ss.php`
+
+
+class mymoduleActions extends sfActions
+{
+  public function executeIndex()
+  {
+    ...
+  }
+
+  public function executeList()
+  {
+    ...
+  }
+}

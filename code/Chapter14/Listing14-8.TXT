@@ -1,0 +1,20 @@
+Listing 14-8 - Overriding Global Settings View per View
+
+
+generator:
+  class:              sfPropelAdminGenerator
+  param:
+    model_class:      Article
+    theme:            default
+
+    fields:
+      title:          { name: Article Title }
+      content:        { name: Body }
+
+    list:
+      fields:
+        title:        { name: Title }
+
+    edit:
+      fields:
+        content:      { name: Body of the article }

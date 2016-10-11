@@ -1,0 +1,6 @@
+Listing 8-5 - Getters for Record Columns Are Available in the Object Class
+
+
+$article = new Article();
+...
+$title = $article->getTitle();

@@ -1,0 +1,42 @@
+Listing 2-1 - A Flat Script
+    
+    
+<?php
+
+// Connecting, selecting database
+$link = mysql_connect('localhost', 'myuser', 'mypassword');
+mysql_select_db('blog_db', $link);
+
+// Performing SQL query
+$result = mysql_query('SELECT date, title FROM post', $link);
+
+?>
+
+<html>
+  <head>
+    <title>List of Posts</title>
+  </head>
+  <body>
+   <h1>List of Posts</h1>
+   <table>
+     <tr><th>Date</th><th>Title</th></tr>
+<?php
+// Printing results in HTML
+while ($row = mysql_fetch_array($result, MYSQL_ASSOC))
+{
+echo "\t<tr>\n";
+printf("\t\t<td> %s </td>\n", $row['date']);
+printf("\t\t<td> %s </td>\n", $row['title']);
+echo "\t</tr>\n";
+}
+?>
+    </table>
+  </body>
+</html>
+
+<?php 
+
+// Closing connection
+mysql_close($link);
+
+?>

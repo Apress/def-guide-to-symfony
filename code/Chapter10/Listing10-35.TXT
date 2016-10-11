@@ -1,0 +1,9 @@
+Listing 10-35 - Sample Validation File for a Form with Two Password Fields
+
+
+fields:
+  password1:
+  password2:
+    sfCompareValidator:
+      check:         password1
+      compare_error: The two passwords do not match

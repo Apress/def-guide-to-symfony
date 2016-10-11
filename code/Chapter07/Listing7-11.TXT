@@ -1,0 +1,15 @@
+Listing 7-11 - The Components Class, in `modules/news/actions/components.class.php`
+
+
+<?php
+
+class newsComponents extends sfComponents
+{
+  public function executeHeadlines()
+  {
+    $c = new Criteria();
+    $c->addDescendingOrderByColumn(NewsPeer::PUBLISHED_AT);
+    $c->setLimit(5);
+    $this->news = NewsPeer::doSelect($c);
+  }
+}

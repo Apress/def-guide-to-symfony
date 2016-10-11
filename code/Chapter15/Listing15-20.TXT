@@ -1,0 +1,10 @@
+Listing 15-20 - The Test Browser Gives Access to the Response Content As an `sfDomCssSelector` Object
+
+
+$b = new sfTestBrowser();
+$b->initialize();
+$b->get('/foobar/edit/id/1');
+$c = new sfDomCssSelector($b->getResponseDom())
+$b->test()->is($c->getTexts('form input[type="hidden"][value="1"]'), array('');
+$b->test()->is($c->getTexts('form textarea[name="text1"]'), array('foo'));
+$b->test()->is($c->getTexts('form input[type="submit"]'), array(''));

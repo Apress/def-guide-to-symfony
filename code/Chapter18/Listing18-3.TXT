@@ -1,0 +1,10 @@
+Listing 18-3 - Foreign Key Getters Issue One Database Query
+
+
+// In the template
+$article->getAuthor()
+
+// Database query issued by getAuthor()
+SELECT author.id, author.name, ...
+FROM   author
+WHERE  author.id = ?                // ? is article.author_id

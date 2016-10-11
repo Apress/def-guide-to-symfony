@@ -1,0 +1,18 @@
+Listing 9-7 - Link Helpers for `<a>`, `<input>`, and `<form>` Tags
+
+
+// Hyperlink on a string
+<?php echo link_to('my article', 'article/read?title=Finance_in_France') ?>
+ => <a href="/routed/url/to/Finance_in_France">my article</a>
+
+// Hyperlink on an image
+<?php echo link_to(image_tag('read.gif'), 'article/read?title=Finance_in_France') ?>
+ => <a href="/routed/url/to/Finance_in_France"><img src="/images/read.gif" /></a>
+
+// Button tag
+<?php echo button_to('my article', 'article/read?title=Finance_in_France') ?>
+ => <input value="my article" type="button"onclick="document.location.href='/routed/url/to/Finance_in_France';" />
+
+// Form tag
+<?php echo form_tag('article/read?title=Finance_in_France') ?>
+ => <form method="post" action="/routed/url/to/Finance_in_France" />

@@ -1,0 +1,13 @@
+Listing 19-5 - Example of Custom Directory Structure for a Shared Host
+
+
+symfony/    # Private area
+  apps/
+  batch/
+  cache/
+  ...
+www/        # Public area
+  images/
+  css/
+  js/
+  index.php

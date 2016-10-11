@@ -1,0 +1,7 @@
+Listing 8-1 - Accessors Mask the Actual Table Structure in a Model Class
+
+
+public function getName()
+{
+  return $this->getFirstName.' '.$this->getLastName();
+}

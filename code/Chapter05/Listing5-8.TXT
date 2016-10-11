@@ -1,0 +1,10 @@
+Listing 5-8 - Default Configuration Is Shown Commented
+
+
+# The cache is off by default
+settings:
+# cache: off
+
+# If you want to change this setting, uncomment the line first
+settings:
+  cache: on

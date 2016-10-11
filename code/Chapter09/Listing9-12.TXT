@@ -1,0 +1,5 @@
+Listing 9-12 - Default Routing Rule
+
+
+<?php echo link_to('my article', 'article/read?title=Finance_in_France') ?>
+=> <a href="/article/read/title/Finance_in_France">my article</a>

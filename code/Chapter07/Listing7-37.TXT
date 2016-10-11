@@ -1,0 +1,3 @@
+Listing 7-37 - Layout Removal in the Action
+
+$this->setLayout(false);

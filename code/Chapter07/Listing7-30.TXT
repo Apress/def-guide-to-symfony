@@ -1,0 +1,8 @@
+Listing 7-30 - Sample Module `view.yml` That Removes the Files Defined at the Application Level
+
+
+indexSuccess:
+  stylesheets: [-main, special]
+
+all:
+  stylesheets: [additional]

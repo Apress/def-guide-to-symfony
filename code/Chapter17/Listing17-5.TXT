@@ -1,0 +1,11 @@
+Listing 17-5 - Giving a Method the Ability to Be Altered
+
+
+class SomeOtherClass
+{
+  public function doThings()
+  {
+    echo "I'm working...";
+    sfMixer::callMixins();
+  }
+}

@@ -1,0 +1,7 @@
+Listing 14-19 - Setting a Tooltip in the `edit` View, in `modules/comment/config/generator.yml`
+
+
+edit:
+  fields:
+    ...
+    article_id:   { help: The current comment relates to this article }

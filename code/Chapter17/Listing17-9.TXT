@@ -1,0 +1,12 @@
+Listing 17-9 - Any Callable Can Be Registered As a Mixer Extension
+
+
+// Use a class method as a callable
+sfMixer::register('BicycleRider', array('Steroids', 'partyAllNight'));
+
+// Use an object method as a callable
+$mySteroids = new Steroids();
+sfMixer::register('BicycleRider', array($mySteroids, 'partyAllNight'));
+
+// Use a function as a callable
+sfMixer::register('BicycleRider', 'die');

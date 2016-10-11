@@ -1,0 +1,7 @@
+Listing 6-38 - Module Configuration, in `apps/myapp/modules/mymodule/config/module.yml`
+
+
+all:                 # For all environments
+  enabled:     true
+  is_internal: false
+  view_name:   sfPhpView

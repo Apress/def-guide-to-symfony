@@ -1,0 +1,10 @@
+Listing 10-26 - Activating `fillin` to Repopulate the Form When Validation Fails, in `validate/send.yml`
+
+
+fillin:
+  enabled: true  # Enable the form repopulation
+  param:
+    name: test  # Form name, not needed if there is only one form in the page
+    skip_fields:   [email]  # Do not repopulate these fields
+    exclude_types: [hidden, password] # Do not repopulate these field types
+    check_types:   [text, checkbox, radio, password, hidden] # Do repopulate these

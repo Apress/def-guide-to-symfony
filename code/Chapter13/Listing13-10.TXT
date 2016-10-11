@@ -1,0 +1,8 @@
+Listing 13-10 - Retrieving Objects with an i18n `Criteria`
+
+
+$c = new Criteria();
+$c->add(ProductPeer::PRICE, 100, Criteria::LESS_THAN);
+$products = ProductPeer::doSelectWithI18n($c, $culture);
+// The $culture argument is optional
+// The current user culture is used if no culture is given

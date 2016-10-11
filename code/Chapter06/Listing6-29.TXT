@@ -1,0 +1,22 @@
+Listing 6-29 - Sample Validation Methods
+
+
+class mymoduleActions extends sfActions
+{
+  public function validateMyAction()
+  {
+    return ($this->getRequestParameter('id') > 0);
+  }
+
+  public function handleErrorMyAction()
+  {
+    $this->message = "Invalid parameters";
+
+    return sfView::SUCCESS;
+  }
+
+  public function executeMyAction()
+  {
+    $this->message = "The parameters are correct";
+  }
+}

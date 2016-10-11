@@ -1,0 +1,14 @@
+Listing 8-28 - Foreign Key Alternative Syntax
+
+
+propel:
+  blog_article:
+    id:
+    title:   varchar(50)
+    user_id: { type: integer }
+    _foreignKeys:
+      -
+        foreignTable: blog_user
+        onDelete:     cascade
+        references:
+          - { local: user_id, foreign: id }

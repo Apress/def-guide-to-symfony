@@ -1,0 +1,6 @@
+Listing 7-39 - Defining the Default `'sidebar'` Slot Component, in `myapp/config/view.yml`
+
+
+default:
+  components:
+    sidebar:  [bar, default]

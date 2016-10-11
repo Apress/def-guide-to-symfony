@@ -1,0 +1,16 @@
+Listing 14-2 - Generated CRUD Elements, in `myapp/modules/article/`
+
+
+// In actions/actions.class.php
+index           // Forwards to the list action below
+list            // Displays the list of all the records of the table
+show            // Displays the lists of all columns of a record
+edit            // Displays a form to modify the columns of a record
+update 	         // Action called by the edit action form
+delete 	         // Deletes a record
+create 	         // Creates a new record
+
+// In templates/
+editSuccess.php  // Record edition form (edit view)
+listSuccess.php  // List of all records (list view)
+showSuccess.php  // Detail of one record (show view)

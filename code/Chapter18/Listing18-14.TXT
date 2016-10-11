@@ -1,0 +1,11 @@
+Listing 18-14 - Clearing Only Selective Parts of the Cache
+
+
+// Clear only the cache of the myapp application
+> symfony clear-cache myapp
+
+// Clear only the HTML cache of the myapp application
+> symfony clear-cache myapp template
+
+// Clear only the configuration cache of the myapp application
+> symfony clear-cache myapp config

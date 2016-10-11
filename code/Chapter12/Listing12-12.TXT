@@ -1,0 +1,7 @@
+Listing 12-12 - Settings for a `staging` Environment, in `myapp/config/settings.yml`
+
+
+staging:
+  .settings:
+    web_debug:  on
+    cache:      on

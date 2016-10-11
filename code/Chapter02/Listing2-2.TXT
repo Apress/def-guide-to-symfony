@@ -1,0 +1,26 @@
+Listing 2-2 - The Controller Part, in `index.php
+
+
+<?php
+
+// Connecting, selecting database
+$link = mysql_connect('localhost', 'myuser', 'mypassword');
+mysql_select_db('blog_db', $link);
+
+// Performing SQL query
+$result = mysql_query('SELECT date, title FROM post', $link);
+
+// Filling up the array for the view
+$posts = array();
+while ($row = mysql_fetch_array($result, MYSQL_ASSOC))
+{
+   $posts[] = $row;
+}
+
+// Closing connection
+mysql_close($link);
+
+// Requiring the view
+require('view.php');
+
+?>

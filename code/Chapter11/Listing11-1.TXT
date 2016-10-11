@@ -1,0 +1,17 @@
+Listing 11-1 - Inserting JavaScript with the `javascript_tag()` Helper
+
+
+<?php echo javascript_tag("
+  function foobar()
+  {
+  ...
+  }
+") ?>
+ => <script type="text/javascript">
+    //<![CDATA[
+      function foobar()
+      {
+        ...
+      }
+    //]]>
+    </script>

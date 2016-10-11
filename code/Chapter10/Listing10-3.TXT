@@ -1,0 +1,31 @@
+Listing 10-3 - Input Date Helpers
+
+
+<?php echo input_date_tag('dateofbirth', '2005-05-03', 'rich=true') ?>
+ => a text input tag together with a calendar widget
+
+<?php echo select_day_tag('day', 1, 'include_custom=Choose a day') ?>
+=> <select name="day" id="day">
+      <option value="">Choose a day</option>
+      <option value="1" selected="selected">01</option>
+      <option value="2">02</option>
+      ...
+      <option value="31">31</option>
+    </select>
+
+<?php echo select_month_tag('month', 1, 'include_custom=Choose a monthuse_short_month=true') ?>
+=> <select name="month" id="month">
+      <option value="">Choose a month</option>
+      <option value="1" selected="selected">Jan</option>
+      <option value="2">Feb</option>
+      ...
+      <option value="12">Dec</option>
+    </select>
+
+<?php echo select_year_tag('year', 2007, 'include_custom=Choose a yearyear_end=2010') ?>
+ => <select name="year" id="year">
+      <option value="">Choose a year</option>
+      <option value="2006">2006</option>
+      <option value="2007" selected="selected">2007</option>
+      ...
+    </select>

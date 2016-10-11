@@ -1,0 +1,10 @@
+Listing 15-17 - Testing Directly with `sfTestBrowser`
+
+
+$b = new sfTestBrowser();
+$b->initialize();
+$b->get('/foobar/edit/id/1')->
+    isRequestParameter('id', 1)->
+    isStatutsCode()->
+    isResponseHeader('content-type', 'text/html; charset=utf-8')->
+    responseContains('edit');

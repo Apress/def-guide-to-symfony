@@ -1,0 +1,17 @@
+Listing 9-8 - URLs Accepted by Link Helpers
+
+
+// Internal URI
+<?php echo link_to('my article', 'article/read?title=Finance_in_France') ?>
+ => <a href="/routed/url/to/Finance_in_France">my article</a>
+
+// Internal URI with dynamic parameters
+<?php echo link_to('my article', 'article/read?title='.$article->getTitle()) ?>
+
+// Internal URI with anchors
+<?php echo link_to('my article', 'article/read?title=Finance_in_France#foo') ?>
+ => <a href="/routed/url/to/Finance_in_France#foo">my article</a>
+
+// Absolute URL
+<?php echo link_to('my article', 'http://www.example.com/foobar.html') ?>
+ => <a href="http://www.example.com/foobar.html">my article</a>

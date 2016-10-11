@@ -1,0 +1,15 @@
+Listing 10-11 - Creating a List of Options Based on an Array with `options_for_select()`
+
+
+<?php echo options_for_select(array(
+  '1' => 'Steve',
+  '2' => 'Bob',
+  '3' => 'Albert',
+  '4' => 'Ian',
+  '5' => 'Buck'
+), 4) ?>
+ => <option value="1">Steve</option>
+    <option value="2">Bob</option>
+    <option value="3">Albert</option>
+    <option value="4" selected="selected">Ian</option>
+    <option value="5">Buck</option>

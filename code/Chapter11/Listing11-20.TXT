@@ -1,0 +1,9 @@
+Listing 11-20 - Changing the Ajax Request Method
+
+
+<div id="feedback"></div>
+<?php echo link_to_remote('Delete this post', array(
+    'update'    => 'feedback',
+    'url'       => 'post/delete?id='.$post->getId(),
+    'method'    => 'get',
+)) ?>

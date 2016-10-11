@@ -1,0 +1,20 @@
+Listing 11-32 - Draggable Elements and Drop-Receiving Elements in a Shopping Cart
+
+
+<ul id="items">
+  <li id="item_1" class="food">Carrot</li>
+  <?php echo draggable_element('item_1', array('revert' => true)) ?>
+  <li id="item_2" class="food">Apple</li>
+  <?php echo draggable_element('item_2', array('revert' => true)) ?>
+  <li id="item_3" class="food">Orange</li>
+  <?php echo draggable_element('item_3', array('revert' => true)) ?>
+</li>
+<div id="cart">
+  <p>Your cart is empty</p>
+  <p>Drag items here to add them to your cart</p>
+</div>
+<?php echo drop_receiving_element('cart', array(
+  'url'        => 'cart/add',
+  'accept'     => 'food',
+  'update'     => 'cart',
+)) ?>

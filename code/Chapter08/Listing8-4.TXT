@@ -1,0 +1,8 @@
+Listing 8-4 - Sample Model Class File, in `lib/model/Article.php`
+
+
+<?php
+
+class Article extends BaseArticle
+{
+}

@@ -1,0 +1,13 @@
+Listing 6-31 - Default Filter Chain, in `myapp/config/filters.yml`
+
+
+rendering: ~
+web_debug: ~
+security:  ~
+
+# Generally, you will want to insert your own filters here
+
+cache:     ~
+common:    ~
+flash:     ~
+execution: ~

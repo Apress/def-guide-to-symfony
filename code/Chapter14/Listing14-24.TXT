@@ -1,0 +1,13 @@
+Listing 14-24 - Using a Partial Filter
+
+
+// Define the partial, in templates/_state.php
+<?php echo select_tag('filters[state]', options_for_select(array(
+  '' => '',
+  'open' => 'open',
+  'closed' => 'closed',
+), isset($filters['state']) ? $filters['state'] : '')) ?>
+
+// Add the partial filter in the filter list, in config/generator.yml
+    list:
+      filters:        [date, _state]

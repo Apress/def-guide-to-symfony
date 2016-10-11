@@ -1,0 +1,7 @@
+Listing 9-13 - Forcing GET Variables with the `query_string` Option
+
+
+<?php echo link_to('my article', 'article/read?title=Finance_in_France', array(
+  'query_string' => 'title=Finance_in_France'
+)) ?>
+=> <a href="/article/read?title=Finance_in_France">my article</a>

@@ -1,0 +1,10 @@
+Listing 6-7 - Single Action File, in `myapp/modules/mymodule/actions/listAction.class.php`
+
+
+class listAction extends sfAction
+{
+  public function execute()
+  {
+    ...
+  }
+}

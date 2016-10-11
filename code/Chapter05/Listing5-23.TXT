@@ -1,0 +1,29 @@
+Listing 5-23 - Using the `sfYaml` Class to Turn a YAML File into an Associative Array
+
+
+$test = sfYaml::load('/path/to/test.yml');
+print_r($test);
+
+
+Array(
+  [house] => Array(
+    [family] => Array(
+      [name] => Doe
+      [parents] => Array(
+        [0] => John
+        [1] => Jane
+      )
+      [children] => Array(
+        [0] => Paul
+        [1] => Mark
+        [2] => Simone
+      )
+    )
+    [address] => Array(
+      [number] => 34
+      [street] => Main Street
+      [city] => Nowheretown
+      [zipcode] => 12345
+    )
+  )
+)

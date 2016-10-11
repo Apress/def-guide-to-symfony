@@ -1,0 +1,7 @@
+Listing 8-8 - The `fromArray()` Method Is a Multiple Setter
+
+
+$article->fromArray(array(
+  'title'   => 'My first article',
+  'content' => 'This is my very first article.\n Hope you enjoy it!',
+));

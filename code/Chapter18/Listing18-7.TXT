@@ -1,0 +1,12 @@
+Listing 18-7 - Using an Array of Objects Exempts You from Creating a Temporary Array
+
+
+// In the action
+$this->articles = ArticlePeer::doSelect(new Criteria());
+
+// In the template
+<ul>
+<?php foreach ($articles as $article): ?>
+  <li><?php echo $article->getTitle() ?></li>
+<?php endforeach; ?>
+</ul>

@@ -1,0 +1,16 @@
+Listing 10-13 - Creating a List of Options Based on a Foreign Key with `objects_for_select()`
+
+
+<?php echo select_tag('author_id', objects_for_select(
+  AuthorPeer::doSelect(new Criteria()),
+  'getId',
+  '__toString()',
+  $article->getAuthorId()
+)) ?>
+=> <select name="author_id" id="author_id">
+      <option value="1">Steve</option>
+      <option value="2">Bob</option>
+      <option value="3">Albert</option>
+      <option value="4" selected="selected">Ian</option>
+      <option value="5">Buck</option>
+    </select>

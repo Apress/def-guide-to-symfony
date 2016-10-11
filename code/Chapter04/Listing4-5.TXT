@@ -1,0 +1,7 @@
+Listing 4-5 - The Alternative PHP Syntax, Good for Templates
+
+
+<p>Hello, world!</p>
+<?php if ($test): ?>
+<p><?php echo time(); ?></p>
+<?php endif; ?>

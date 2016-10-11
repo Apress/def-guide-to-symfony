@@ -1,0 +1,13 @@
+Listing 5-5 - YAML Associative Array Syntax
+
+
+# Incorrect syntax, blanks are missing after the colon
+mail: {webmaster:webmaster@example.com,contact:contact@example.com}
+
+# Correct shorthand syntax for associative arrays
+mail: { webmaster: webmaster@example.com, contact: contact@example.com }
+
+# Expanded syntax for associative arrays
+mail:
+  webmaster: webmaster@example.com
+  contact:   contact@example.com

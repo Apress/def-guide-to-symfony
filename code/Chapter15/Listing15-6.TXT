@@ -1,0 +1,27 @@
+Listing 15-6 - Including Classes in Unit Tests
+
+
+<?php
+
+include(dirname(__FILE__).'/../bootstrap/unit.php');
+include(dirname(__FILE__).'/../../config/config.php');
+require_once($sf_symfony_lib_dir.'/util/sfToolkit.class.php');
+
+$t = new lime_test(7, new lime_output_color());
+
+// isPathAbsolute()
+$t->diag('isPathAbsolute()');
+$t->is(sfToolkit::isPathAbsolute('/test'), true,
+    'isPathAbsolute() returns true if path is absolute');
+$t->is(sfToolkit::isPathAbsolute('\\test'), true,
+    'isPathAbsolute() returns true if path is absolute');
+$t->is(sfToolkit::isPathAbsolute('C:\\test'), true,
+    'isPathAbsolute() returns true if path is absolute');
+$t->is(sfToolkit::isPathAbsolute('d:/test'), true,
+    'isPathAbsolute() returns true if path is absolute');
+$t->is(sfToolkit::isPathAbsolute('test'), false,
+    'isPathAbsolute() returns false if path is relative');
+$t->is(sfToolkit::isPathAbsolute('../test'), false,
+    'isPathAbsolute() returns false if path is relative');
+$t->is(sfToolkit::isPathAbsolute('..\\test'), false,
+    'isPathAbsolute() returns false if path is relative');

@@ -1,0 +1,7 @@
+Listing 16-5 - Adding a Custom Log Message from Anywhere
+
+
+if (sfConfig::get('sf_logging_enabled'))
+{
+  sfContext::getInstance()->getLogger()->info($message);
+}

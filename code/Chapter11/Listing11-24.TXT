@@ -1,0 +1,10 @@
+Listing 11-24 - Visual Effects in Templates with the `visual_effect()` Helper
+
+
+<div id="secret_div" style="display:none">I was here all along!</div>
+<?php echo link_to_function(
+  'Show the secret div',
+  visual_effect('appear', 'secret_div')
+) ?>
+// Will make a call to Effect.Appear('secret_div')
+

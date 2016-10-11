@@ -1,0 +1,15 @@
+Listing 6-23 - Setting Access Restrictions, in `apps/myapp/modules/mymodule/config/security.yml`
+
+
+read:
+  is_secure:   off       # All users can request the read action
+
+update:
+  is_secure:   on        # The update action is only for authenticated users
+
+delete:
+  is_secure:   on        # Only for authenticated users
+  credentials: admin     # With the admin credential
+
+all:
+  is_secure:  off        # off is the default value anyway

@@ -1,0 +1,18 @@
+Listing 6-25 - Setting the Authenticated Status of a User
+
+
+class myAccountActions extends sfActions
+{
+  public function executeLogin()
+  {
+    if ($this->getRequestParameter('login') == 'foobar')
+    {
+      $this->getUser()->setAuthenticated(true);
+    }
+  }
+
+  public function executeLogout()
+  {
+    $this->getUser()->setAuthenticated(false);
+  }
+}

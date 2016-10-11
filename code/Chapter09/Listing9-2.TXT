@@ -1,0 +1,6 @@
+Listing 9-2 - A Sample Routing Rule
+
+
+article_by_title:
+  url:    articles/:subject/:year/:title.html
+  param:  { module: article, action: permalink }

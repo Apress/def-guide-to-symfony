@@ -1,0 +1,15 @@
+Listing 8-21 - Customizing the Model, in `lib/model/ArticlePeer.php`
+
+
+<?php
+
+class ArticlePeer extends BaseArticlePeer
+{
+  public static function getAllOrderedByDate()
+  {
+    $c = new Criteria();
+    $c->addAscendingOrderByColumn(self:CREATED_AT);
+    return self::doSelect($c);
+
+  }
+}

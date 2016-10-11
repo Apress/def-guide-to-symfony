@@ -1,0 +1,6 @@
+Listing 9-22 - Setting a Suffix for All URLs, in `myapp/config/settings.yml`
+
+
+prod:
+  .settings
+    suffix:         .html

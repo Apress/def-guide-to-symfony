@@ -1,0 +1,6 @@
+Listing 7-22 - Title Definition in `view.yml`
+
+
+indexSuccess:
+  metas:
+    title: Three little piggies

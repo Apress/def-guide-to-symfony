@@ -1,0 +1,21 @@
+Listing 14-3 - Generated Action Class, in `myapp/modules/article/actions/actions.class.php`
+
+
+class articleActions extends sfActions
+{
+  public function executeIndex()
+  {
+    return $this->forward('article', 'list');
+  }
+
+  public function executeList()
+  {
+    $this->articles = ArticlePeer::doSelect(new Criteria());
+  }
+
+  public function executeShow()
+  {
+    $this->article = ArticlePeer::retrieveByPk($this->getRequestParameter('id'));
+    $this->forward404Unless($this->article);
+  }
+  ...

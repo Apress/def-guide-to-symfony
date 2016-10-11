@@ -1,0 +1,14 @@
+Listing 8-13 - Retrieving Records by Criteria with `doSelect()`--Criteria with Conditions
+
+
+$c = new Criteria();
+$c->add(CommentPeer::AUTHOR, 'Steve');
+$c->addAscendingOrderByColumn(CommentPeer::CREATED_AT);
+$comments = CommentPeer::doSelect($c);
+
+// Will result in the following SQL query
+SELECT blog_comment.ARTICLE_ID, blog_comment.AUTHOR, blog_comment.CONTENT,
+       blog_comment.CREATED_AT
+FROM   blog_comment
+WHERE  blog_comment.author = 'Steve'
+ORDER BY blog_comment.CREATED_AT ASC;

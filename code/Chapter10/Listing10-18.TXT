@@ -1,0 +1,30 @@
+Listing 10-18 - Validating Request Parameters with Reusable Validators, in `modules/contact/action/actions.class.php`
+
+
+public function validateSend()
+{
+  $name = $this->getRequestParameter('name');
+
+  // The name field is required
+  if (!$name)
+  {
+    $this->getRequest()->setError('name', 'The name field cannot be left blank');
+
+    return false;
+  }
+
+  // The name field must be a text entry between 2 and 100 characters
+  $myValidator = new sfStringValidator();
+  $myValidator->initialize($this->getContext(), array(
+    'min'       => 2,
+    'min_error' => 'This name is too short (2 characters minimum)',
+    'max'       => 100,
+    'max_error' => 'This name is too long. (100 characters maximum)',
+  ));
+  if (!$myValidator->execute($name))
+  {
+    return false;
+  }
+
+  return true;
+}

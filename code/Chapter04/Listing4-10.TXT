@@ -1,0 +1,6 @@
+Listing 4-10 - Hyperlinks, the Classic Way
+
+
+<a href="/myapp_dev.php/mymodule/anotherAction?name=anonymous">
+  I never say my name
+</a>

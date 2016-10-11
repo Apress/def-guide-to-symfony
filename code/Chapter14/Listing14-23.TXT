@@ -1,0 +1,10 @@
+Listing 14-23 - Setting the Filters in the `list` View, in `modules/comment/config/generator.yml`
+
+
+list:
+  filters: [article_id, author, created_at]
+  layout:  stacked
+  params:  |
+    %%=content%% <br />
+    (sent by %%author%% on %%created_at%% about %%article_link%%)
+  display:  [created_at, author, content]

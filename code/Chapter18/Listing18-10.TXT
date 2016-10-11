@@ -1,0 +1,8 @@
+Listing 18-10 - Adding a Single Column Index, in `config/schema.yml`
+
+
+propel:
+  article:
+    id:
+    author_id:
+    title: { type: varchar(100), index: true }

@@ -1,0 +1,7 @@
+Listing 15-23 - Using the Count Option to Count the Number of Matches
+
+
+$b = new sfTestBrowser();
+$b->initialize();
+$b->get('/foobar/edit?id=1')->
+    checkResponseElement('form input', true, array('count' => 3));

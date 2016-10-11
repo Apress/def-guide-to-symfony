@@ -1,0 +1,12 @@
+Listing 11-11 - Ajax Form with the `form_remote_tag()` Helper
+
+
+<div id="item_list"></div>
+<?php echo form_remote_tag(array(
+    'update'   => 'item_list',
+    'url'      => 'item/add',
+)) ?>
+  <label for="item">Item:</label>
+  <?php echo input_tag('item') ?>
+  <?php echo submit_tag('Add') ?>
+</form>

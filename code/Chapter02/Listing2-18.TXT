@@ -1,0 +1,9 @@
+Listing 2-18 - Using the `sfResponse` Parameter Holder Namespace
+
+
+$response->setParameter('foo', 'bar1');
+$response->setParameter('foo', 'bar2', 'my/name/space');
+echo $response->getParameter('foo');
+ => 'bar1'
+echo $response->getParameter('foo', null, 'my/name/space');
+ => 'bar2'

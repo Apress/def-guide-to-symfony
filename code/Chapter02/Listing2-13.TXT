@@ -1,0 +1,5 @@
+Listing 2-13 - `list` View, in `myproject/apps/myapp/modules/weblog/config/view.yml
+
+
+listSuccess:
+  metas: { title: List of Posts }

@@ -1,0 +1,9 @@
+Listing 2-9 - The View Logic Part of the View
+
+
+<?php
+
+$title = 'List of Posts';
+$content = include('mytemplate.php');
+
+?>

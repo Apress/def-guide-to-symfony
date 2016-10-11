@@ -1,0 +1,9 @@
+Listing 11-19 - Conditionally Calling the Remote Function According to a Test on the Client Side
+
+
+<div id="feedback"></div>
+<?php echo link_to_remote('Delete this post', array(
+    'update'    => 'feedback',
+    'url'       => 'post/delete?id='.$post->getId(),
+    'condition' => "$('elementID') == true",
+)) ?>

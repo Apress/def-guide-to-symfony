@@ -1,0 +1,8 @@
+Listing 14-26 - Setting a Default Sort Field in the `list` View
+
+
+list:
+  sort:   created_at
+  # Alternative syntax, to specify a sort order
+  sort:   [created_at, desc]
+

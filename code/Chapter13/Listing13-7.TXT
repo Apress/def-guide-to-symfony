@@ -1,0 +1,11 @@
+Listing 13-7 - Sample Schema for i18n Data, Short Version, in `config/schema.yml`
+
+
+my_connection:
+  my_product:
+    _attributes: { phpName: Product }
+    id:          
+    price:       float
+  my_product_i18n:
+    _attributes: { phpName: ProductI18n }
+    name:        varchar(50)

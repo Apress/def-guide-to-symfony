@@ -1,0 +1,6 @@
+Listing 5-2 - Nonstandard Strings Should Be Enclosed in Single Quotes
+
+
+error1: This field is compulsory
+error2: '  This field is compulsory  '
+error3: 'Don''t leave this field blank'   # Single quotes must be doubled

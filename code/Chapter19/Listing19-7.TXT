@@ -1,0 +1,21 @@
+Listing 19-7 - Extract of `$sf_symfony_data_dir/config/config_handlers.yml`
+
+
+config/settings.yml:
+  class:    sfDefineEnvironmentConfigHandler
+  param:
+    prefix: sf_
+
+config/app.yml:
+  class:    sfDefineEnvironmentConfigHandler
+  param:
+    prefix: app_
+
+config/filters.yml:
+  class:    sfFilterConfigHandler
+
+modules/*/config/module.yml:
+  class:    sfDefineEnvironmentConfigHandler
+  param:
+    prefix: mod_
+    module: yes

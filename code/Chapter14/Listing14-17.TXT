@@ -1,0 +1,6 @@
+Listing 14-17 - Components Can Be Used As Additional Columns--Use the `~` Prefix
+
+
+...
+list:
+  display:        [id, ~article_link, created_at]

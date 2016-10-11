@@ -1,0 +1,6 @@
+Listing 2-15 - Using the `sfResponse` Parameter Holder
+
+
+$response->getParameterHolder()->set('foo', 'bar');
+echo $response->getParameterHolder()->get('foo');
+ => 'bar'

@@ -1,0 +1,14 @@
+Listing 10-4 - Accepted Date Formats in Date Helpers
+
+
+// Work fine
+<?php echo input_date_tag('test', '2006-04-01', 'rich=true') ?>
+<?php echo input_date_tag('test', 1143884373, 'rich=true') ?>
+<?php echo input_date_tag('test', 'now', 'rich=true') ?>
+<?php echo input_date_tag('test', '23 October 2005', 'rich=true') ?>
+<?php echo input_date_tag('test', 'next tuesday', 'rich=true') ?>
+<?php echo input_date_tag('test', '1 week 2 days 4 hours 2 seconds', 'rich=true') ?>
+
+// Return null
+<?php echo input_date_tag('test', null, 'rich=true') ?>
+<?php echo input_date_tag('test', '', 'rich=true') ?>

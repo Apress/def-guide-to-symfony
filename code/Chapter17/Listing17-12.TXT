@@ -1,0 +1,32 @@
+Listing 17-12 - Replacing `callMixin()` by a Custom Loop
+
+
+class Income
+{
+  protected $amout = 0;
+
+  public function calculateTaxes($rate = 0)
+  {
+    $taxes = $this->amount * $rate;
+    foreach (sfMixer::getCallables('Income:calculateTaxes') as $callable)
+    {
+      $taxes += call_user_func($callable, $this->amount, $rate);
+    }
+
+    return $taxes;
+  }
+}
+
+class FixedTax
+{
+  protected $minIncome = 10000;
+  protected $taxAmount = 500;
+
+  public function calculateTaxes($amount)
+  {
+    return ($amount > $this->minIncome) ? $this->taxAmount : 0;
+  }
+}
+
+sfMixer::register('Income:calculateTaxes', array('FixedTax', 'calculateTaxes'));
+

@@ -1,0 +1,34 @@
+Listing 17-27 - Example List of Files to Package As a Plug-In
+
+
+sfSamplePlugin/
+  README
+  LICENSE
+  config/
+    schema.yml
+  data/
+    fixtures/
+      fixtures.yml
+    tasks/
+      sfSampleTask.php
+  lib/
+    model/
+      sfSampleFooBar.php
+      sfSampleFooBarPeer.php
+    validator/
+      sfSampleValidator.class.php
+  modules/
+    sfSampleModule/
+      actions/
+        actions.class.php
+      config/
+        security.yml
+      lib/
+        BasesfSampleModuleActions.class.php
+      templates/
+        indexSuccess.php
+  web/
+    css/
+      sfSampleStyle.css
+    images/
+      sfSampleImage.png

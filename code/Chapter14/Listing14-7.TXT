@@ -1,0 +1,12 @@
+Listing 14-7 - Setting a Custom Label for a Column
+
+
+generator:
+  class:              sfPropelAdminGenerator
+  param:
+    model_class:      Article
+    theme:            default
+
+    fields:
+      title:          { name: Article Title, type: textarea_tag, params: class=foo }
+      content:        { name: Body, help: Fill in the article body }

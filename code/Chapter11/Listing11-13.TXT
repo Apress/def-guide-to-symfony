@@ -1,0 +1,13 @@
+Listing 11-13 - Calling a Remote Function When a Field Value Changes with `observe_field()`
+
+
+<?php echo form_tag('@item_add_regular') ?>
+  <label for="item">Item:</label>
+  <?php echo input_tag('item') ?>
+  <div id="item_suggestion"></div>
+  <?php echo observe_field('item', array(
+      'update'   => 'item_suggestion',
+      'url'      => '@item_being_typed',
+  )) ?>
+  <?php echo submit_tag('Add') ?>
+</form>

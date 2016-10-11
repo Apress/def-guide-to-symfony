@@ -1,0 +1,9 @@
+Listing 2-20 - Using the `sfConfig` Class Methods Instead of Constants
+
+
+// Instead of PHP constants,
+define('SF_FOO', 'bar');
+echo SF_FOO;
+// Symfony uses the sfConfig object
+sfConfig::set('sf_foo', 'bar');
+echo sfConfig::get('sf_foo');

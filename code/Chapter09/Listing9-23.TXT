@@ -1,0 +1,10 @@
+Listing 9-23 - Setting a Suffix for One URL, in `myapp/config/routing.yml`
+
+
+article_list:
+  url:          /latest_articles
+  param:        { module: article, action: list }
+
+article_list_feed:
+  url:          /latest_articles.rss
+  param:        { module: article, action: list, type: feed }

@@ -1,0 +1,11 @@
+Listing 6-2 - Sample `app.yml` with Specific Settings for the Staging Environment
+
+
+staging:
+  mail:
+    webmaster:    dummy@mysite.com
+    contact:      dummy@mysite.com
+all:
+  mail:
+    webmaster:    webmaster@mysite.com
+    contact:      contact@mysite.com

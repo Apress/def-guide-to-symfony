@@ -1,0 +1,10 @@
+Listing 11-10 - Options of the `link_to_remote()` Helper
+
+
+<div id="emails"></div>
+<?php echo link_to_remote(image_tag('refresh'), array(
+    'update' => 'emails',
+    'url'    => '@list_emails',
+), array(
+    'class'  => 'ajax_link',
+)) ?>

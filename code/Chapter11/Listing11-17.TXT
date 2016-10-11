@@ -1,0 +1,10 @@
+Listing 11-17 - Using the Position Parameter to Change the Response Location
+
+
+<div id="feedback"></div>
+<p>Hello, World!</p>
+<?php echo link_to_remote('Delete this post', array(
+    'update'   => 'feedback',
+    'url'      => 'post/delete?id='.$post->getId(),
+    'position' => 'after',
+)) ?>

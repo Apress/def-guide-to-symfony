@@ -1,0 +1,16 @@
+Listing 17-14 - Overriding Factories
+
+
+// Create a myRequest.class.php in an autoloaded directory,
+// For instance in myapp/lib/
+<?php
+
+class myRequest extends sfRequest
+{
+  // Your code here
+}
+
+// Declare this class as the request factory in factories.yml
+all:
+  request:
+    class: myRequest

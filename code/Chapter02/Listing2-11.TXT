@@ -1,0 +1,13 @@
+Listing 2-11 - `list` Action, in `myproject/apps/myapp/modules/weblog/actions/actions.class.php
+
+
+<?php
+class weblogActions extends sfActions
+{
+  public function executeList()
+  {
+    $this->posts = PostPeer::doSelect(new Criteria());
+  }
+}
+
+?>

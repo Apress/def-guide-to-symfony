@@ -1,0 +1,8 @@
+Listing 12-4 - Caching a Partial, in `myapp/modules/user/config/cache.yml`
+
+
+_my_partial:
+  enabled:    on
+list:
+  enabled:    on
+...

@@ -1,0 +1,10 @@
+Listing 17-25 - Customizing a Plug-In That Uses the Application Configuration
+
+
+// example plug-in code
+$foo = sfConfig::get('app_my_plugin_foo', 'bar');
+
+// Change the 'foo' default value ('bar') in the application app.yml
+all:
+  my_plugin:
+    foo:       barbar

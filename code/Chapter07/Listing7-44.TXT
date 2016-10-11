@@ -1,0 +1,7 @@
+Listing 7-44 - Activating Output Escaping, in `myapp/config/settings.yml`
+
+
+all:
+  .settings:
+    escaping_strategy: both
+    escaping_method:   ESC_ENTITIES

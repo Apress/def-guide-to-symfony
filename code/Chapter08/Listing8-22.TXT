@@ -1,0 +1,7 @@
+Listing 8-22 - Using Custom Model Methods Is Like Using the Generated Methods
+
+
+foreach (ArticlePeer::getAllOrderedByDate() as $article)
+{
+  echo $article;      // Will call the magic __toString() method
+}

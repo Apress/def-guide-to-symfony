@@ -1,0 +1,21 @@
+Listing 2-17 - Using the Attribute Holder Getter's Default Value
+
+
+// The 'foobar' parameter is not defined, so the getter returns an empty value
+echo $response->getParameter('foobar');
+ => null
+
+// A default value can be used by putting the getter in a condition
+if ($response->hasParameter('foobar'))
+{
+  echo $response->getParameter('foobar');
+}
+else
+{
+  echo 'default';
+}
+ => default
+
+// But it is much faster to use the second getter argument for that
+echo $response->getParameter('foobar', 'default');
+ => default

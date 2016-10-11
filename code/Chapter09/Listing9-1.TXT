@@ -1,0 +1,11 @@
+Listing 9-1 - External URL and Internal URI
+
+
+// Internal URI syntax
+<module>/<action>[?param1=value1][&param2=value2][&param3=value3]...
+
+// Example internal URI, which never appears to the end user
+article/permalink?year=2006&subject=finance&title=activity-breakdown
+
+// Example external URL, which appears to the end user
+http://www.example.com/articles/finance/2006/activity-breakdown.html

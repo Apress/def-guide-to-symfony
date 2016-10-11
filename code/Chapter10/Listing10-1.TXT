@@ -1,0 +1,8 @@
+Listing 10-1 - The `form_tag()` Helper
+
+
+<?php echo form_tag('test/save') ?>
+ => <form method="post" action="/path/to/save">
+
+<?php echo form_tag('test/save', 'method=get multipart=true class=simpleForm') ?>
+ => <form method="get" enctype="multipart/form-data" class="simpleForm"action="/path/to/save">

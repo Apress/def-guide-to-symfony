@@ -1,0 +1,10 @@
+Listing 7-8 - The Action Defines a Variable, in `mymodule/actions/actions.class.php`
+
+
+class mymoduleActions extends sfActions
+{
+  public function executeIndex()
+  {
+    $this->total = 100;
+  }
+}

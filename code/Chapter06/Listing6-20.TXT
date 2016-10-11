@@ -1,0 +1,8 @@
+Listing 6-20 - Changing the Session Cookie Name, in `apps/myapp/config/factories.yml`
+
+
+all:
+  storage:
+    class: sfSessionStorage
+    param:
+      session_name: my_cookie_name

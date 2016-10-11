@@ -1,0 +1,6 @@
+Listing 8-25 - Attributes for i18n Tables
+
+
+propel:
+  blog_article:
+    _attributes: { isI18N: true, i18nTable: db_group_i18n }

@@ -1,0 +1,9 @@
+Listing 18-19 - Turning Sessions Off, in `myapp/config/factories.yml`
+
+
+all:
+  storage:
+    class: sfSessionStorage
+    param:
+      auto_start: false
+

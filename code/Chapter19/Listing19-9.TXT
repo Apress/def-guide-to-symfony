@@ -1,0 +1,31 @@
+Listing 19-9 - A Custom Configuration Handler, in `myapp/lib/myMapConfigHandler.class.php`
+
+
+<?php
+
+class myMapConfigHandler extends sfYamlConfigHandler
+{
+  public function execute($configFiles)
+  {
+    $this->initialize();
+
+    // Parse the yaml
+    $config = $this->parseYamls($configFiles);
+
+    $data  = "<?php\n";
+    $data. = "\$mapApi = new myMapAPI();\n";
+
+    if (isset($config['api']['url'])
+    {
+      $data. = sprintf("\$mapApi->setUrl('%s');\n", $config['api']['url']);
+    }
+
+    if (isset($config['api']['user'])
+    {
+      $data. = sprintf("\$mapApi->setUser('%s');\n", $config['api']['user']);
+    }
+
+    return $data;
+  }
+}
+

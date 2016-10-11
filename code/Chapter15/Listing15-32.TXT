@@ -1,0 +1,3 @@
+Listing 15-32 - Launching All the Tests of a Project
+
+> symfony test-all

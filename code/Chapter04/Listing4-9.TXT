@@ -1,0 +1,12 @@
+Listing 4-9 - It Is Faster and Easier to Use Helpers Than to Use HTML Tags
+
+
+<p>Hello, world!</p>
+<?php if ($hour >= 18): ?>
+<p>Or should I say good evening? It's already <?php echo $hour ?>.</p>
+<?php endif; ?>
+<?php echo form_tag('mymodule/anotherAction') ?>
+  <?php echo label_for('name', 'What is your name?') ?>
+  <?php echo input_tag('name') ?>
+  <?php echo submit_tag('Ok') ?>
+</form>

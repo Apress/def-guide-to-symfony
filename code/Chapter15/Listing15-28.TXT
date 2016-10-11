@@ -1,0 +1,15 @@
+Listing 15-28 - Example File Naming Practice
+
+
+test/
+  unit/
+    myFunctionTest.php
+    mySecondFunctionTest.php
+    foo/
+      barTest.php
+  functional/
+    frontend/
+      myModuleActionsTest.php
+      myScenarioTest.php
+    backend/
+      myOtherScenarioTest.php

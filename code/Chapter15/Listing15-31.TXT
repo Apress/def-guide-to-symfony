@@ -1,0 +1,12 @@
+Listing 15-31 - Launching All Tests in a Test Harness
+
+> symfony test-unit
+
+unit/myFunctionTest.php................ok
+unit/mySecondFunctionTest.php..........ok
+unit/foo/barTest.php...................not ok
+
+Failed Test                     Stat  Total   Fail  List of Failed
+------------------------------------------------------------------
+unit/foo/barTest.php               0      2      2  62 63
+Failed 1/3 test scripts, 66.66% okay. 2/53 subtests failed, 96.22% okay.

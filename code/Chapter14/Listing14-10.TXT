@@ -1,0 +1,7 @@
+Listing 14-10 - Adding a Custom Getter in the Model, in `lib/model/Article.class.php`
+
+
+public function getNbComments()
+{
+  return $this->countComments();
+}

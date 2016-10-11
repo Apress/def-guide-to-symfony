@@ -1,0 +1,9 @@
+Listing 7-1 - A Sample indexSuccess.php Template
+
+
+<h1>Welcome</h1>
+<p>Welcome back, <?php echo $name ?>!</p>
+<ul>What would you like to do?
+  <li><?php echo link_to('Read the last articles', 'article/read') ?></li>
+  <li><?php echo link_to('Start writing a new one', 'article/write') ?></li>
+</ul>

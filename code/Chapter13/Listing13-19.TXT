@@ -1,0 +1,3 @@
+Listing 13-19 - Calling `__()` in an Action
+
+$this->getContext()->getI18N()->__($text, $args, 'messages');

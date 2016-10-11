@@ -1,0 +1,7 @@
+Listing 12-2 - Activating the Cache for an Action, in myapp/modules/user/config/cache.yml
+
+
+list:
+  enabled:     on
+  with_layout: false   # Default value
+  lifetime:    86400   # Default value

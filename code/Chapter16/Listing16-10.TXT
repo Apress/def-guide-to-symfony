@@ -1,0 +1,9 @@
+Listing 16-10 - Inserting a Message in the Log for Debugging Purposes
+
+
+<?php use_helper('Debug') ?>
+...
+<?php if ($problem): ?>
+  <?php log_message('{sfAction} been there', 'err') ?>
+  ...
+<?php endif ?>

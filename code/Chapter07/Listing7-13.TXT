@@ -1,0 +1,13 @@
+Listing 7-13 - Passing Parameters to a Component and Its Template
+
+
+// Call to the component
+<?php include_component('news', 'headlines', array('foo' => 'bar')) ?>
+
+// In the component itself
+echo $this->foo;
+ => 'bar'
+
+// In the _headlines.php partial
+echo $foo;
+ => 'bar'

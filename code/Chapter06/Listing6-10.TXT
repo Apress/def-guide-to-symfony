@@ -1,0 +1,15 @@
+Listing 6-10 - Bypassing the View by Echoing the Response and Returning `sfView::NONE`
+
+
+public function executeIndex()
+{
+  echo "<html><body>Hello, World!</body></html>";
+
+  return sfView::NONE;
+}
+
+// Is equivalent to
+public function executeIndex()
+{
+  return $this->renderText("<html><body>Hello, World!</body></html>");
+}

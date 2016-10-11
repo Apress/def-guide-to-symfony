@@ -1,0 +1,5 @@
+Listing 15-26 - Setting Up the Test Browser with Hostname and IP
+
+
+$b = new sfTestBrowser();
+$b->initialize('myapp.example.com', '123.456.789.123');

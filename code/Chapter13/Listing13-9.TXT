@@ -1,0 +1,9 @@
+Listing 13-9 - Overriding the `hydrate()` Method to Set the Culture, in `myproject/lib/model/Product.php`
+
+
+public function hydrate(ResultSet $rs, $startcol = 1)
+{
+  parent::hydrate($rs, $startcol);
+  $this->setCulture(sfContext::getInstance()->getUser()->getCulture());
+}
+

@@ -1,0 +1,8 @@
+Listing 14-12 - Adding a Custom Getter Returning HTML, in `lib/model/Comment.class.php`
+
+
+public function getArticleLink()
+{
+  return link_to($this->getArticle()->getTitle(),
+                 'article/edit?id='.$this->getArticleId());
+}

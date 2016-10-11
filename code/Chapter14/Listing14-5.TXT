@@ -1,0 +1,8 @@
+Listing 14-5 - Default Generator Configuration, in backend/modules/article/config/generator.y`ml`
+
+
+generator:
+  class:              sfPropelAdminGenerator
+  param:
+    model_class:      Article
+    theme:            default

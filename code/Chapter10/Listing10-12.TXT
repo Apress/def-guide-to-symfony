@@ -1,0 +1,13 @@
+Listing 10-12 - Creating a List of Options Based on an Array of Objects with `options_for_select()`
+
+
+// In the action
+$options = array();
+foreach ($authors as $author)
+{
+  $options[$author->getId()] = $author->getName();
+}
+$this->options = $options;
+
+// In the template
+<?php echo options_for_select($options, 4) ?>

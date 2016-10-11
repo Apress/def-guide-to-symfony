@@ -1,0 +1,10 @@
+Listing 8-32 - Implied i18n Mechanism
+
+
+propel:
+  db_group:
+    id:
+    created_at:
+
+  db_group_i18n:
+    name:        varchar(50)

@@ -1,0 +1,11 @@
+Listing 18-18 - Using the Process Cache Safely
+
+
+if (sfProcessCache::has('myapp_parameters'))
+{
+  $params = sfProcessCache::get('myapp_parameters');
+}
+else
+{
+  $params = retrieve_parameters();
+}
